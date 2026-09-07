@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-07T19:43:12.297Z",
+  "generatedAt": "2026-09-07T19:48:12.496Z",
   "status": "degraded",
   "problemCount": 1,
   "chain": {
@@ -17,7 +17,7 @@
       "total": 1273,
       "today": 157,
       "week": 1273,
-      "day24h": 255,
+      "day24h": 254,
       "day24hComplete": true
     },
     "lastBlock": 589225,
@@ -186,7 +186,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 104,
+    "built": 94,
     "retries": 3,
     "lost": {
       "txAlreadyFinalized": 3,
@@ -200,12 +200,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 129ms vs a 1000ms budget"
+        "why": "cycle p50 115ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 97,
-        "why": "3 of 104 builds rejected locally"
+        "why": "3 of 94 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -225,18 +225,18 @@
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 3,
-    "headFetchP95Ms": 32,
-    "cycleP50Ms": 129,
-    "cycleP95Ms": 819,
+    "headFetchP50Ms": 6,
+    "headFetchP95Ms": 83,
+    "cycleP50Ms": 115,
+    "cycleP95Ms": 447,
     "stages": {
-      "headFetch": 3,
+      "headFetch": 6,
       "blockProduction": 128,
       "mempoolTx": 125,
       "mempoolBlocks": 148,
       "submit": 195
     },
-    "samples": 78660
+    "samples": 78735
   },
   "trend": {
     "daily": [
@@ -1330,9 +1330,7 @@
     "currency": "usd",
     "value": 0.00361369,
     "change24h": 2.07,
-    "id": "xyo-network",
-    "notional": 0,
-    "hypothetical": true
+    "id": "xyo-network"
   },
   "build": {
     "version": "2.2.3",
