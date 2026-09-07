@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-07T19:48:12.496Z",
+  "generatedAt": "2026-09-07T19:53:13.444Z",
   "status": "degraded",
   "problemCount": 1,
   "chain": {
@@ -186,7 +186,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 94,
+    "built": 87,
     "retries": 3,
     "lost": {
       "txAlreadyFinalized": 3,
@@ -200,12 +200,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 115ms vs a 1000ms budget"
+        "why": "cycle p50 13ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 97,
-        "why": "3 of 94 builds rejected locally"
+        "why": "3 of 87 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -225,18 +225,18 @@
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 6,
-    "headFetchP95Ms": 83,
-    "cycleP50Ms": 115,
-    "cycleP95Ms": 447,
+    "headFetchP50Ms": 9,
+    "headFetchP95Ms": 87,
+    "cycleP50Ms": 13,
+    "cycleP95Ms": 155,
     "stages": {
-      "headFetch": 6,
+      "headFetch": 9,
       "blockProduction": 128,
       "mempoolTx": 125,
       "mempoolBlocks": 148,
       "submit": 195
     },
-    "samples": 78735
+    "samples": 78810
   },
   "trend": {
     "daily": [
