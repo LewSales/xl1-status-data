@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-08T20:38:12.193Z",
+  "generatedAt": "2026-09-08T20:43:13.860Z",
   "status": "degraded",
   "problemCount": 1,
   "chain": {
@@ -186,26 +186,26 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 37,
-    "retries": 4,
+    "built": 26,
+    "retries": 3,
     "lost": {
-      "txAlreadyFinalized": 4,
+      "txAlreadyFinalized": 3,
       "behindFinalizedHead": 3,
       "blockNumberMismatch": 0
     }
   },
   "operations": {
-    "score": 95,
+    "score": 94,
     "components": [
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 11ms vs a 1000ms budget"
+        "why": "cycle p50 10ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 81,
-        "why": "7 of 37 builds rejected locally"
+        "value": 77,
+        "why": "6 of 26 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -220,23 +220,23 @@
     ],
     "bottleneck": {
       "key": "mempool",
-      "text": "Stale mempool data caused 57% of rejected candidates."
+      "text": "Stale mempool data caused 50% of rejected candidates."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 11,
-    "headFetchP95Ms": 182,
-    "cycleP50Ms": 11,
-    "cycleP95Ms": 182,
+    "headFetchP50Ms": 10,
+    "headFetchP95Ms": 179,
+    "cycleP50Ms": 10,
+    "cycleP95Ms": 179,
     "stages": {
-      "headFetch": 11,
+      "headFetch": 10,
       "blockProduction": 187,
       "mempoolTx": 160,
       "mempoolBlocks": 198,
       "submit": 201
     },
-    "samples": 96187
+    "samples": 96262
   },
   "trend": {
     "daily": [
