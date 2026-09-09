@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-09T21:17:44.029Z",
+  "generatedAt": "2026-09-09T21:22:44.083Z",
   "status": "degraded",
   "problemCount": 2,
   "chain": {
@@ -186,11 +186,11 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 57,
+    "built": 49,
     "retries": 1,
     "lost": {
       "txAlreadyFinalized": 1,
-      "behindFinalizedHead": 4,
+      "behindFinalizedHead": 3,
       "blockNumberMismatch": 0
     }
   },
@@ -204,8 +204,8 @@
       },
       {
         "label": "Race health",
-        "value": 91,
-        "why": "5 of 57 builds rejected locally"
+        "value": 92,
+        "why": "4 of 49 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -219,8 +219,8 @@
       }
     ],
     "bottleneck": {
-      "key": "competition",
-      "text": "Head advanced first on 80% of rejections — we are being outrun, not failing."
+      "key": "none",
+      "text": "No local performance constraint detected."
     }
   },
   "latency": {
@@ -236,7 +236,7 @@
       "mempoolBlocks": 211,
       "submit": 196
     },
-    "samples": 118242
+    "samples": 118317
   },
   "trend": {
     "daily": [
@@ -304,9 +304,9 @@
       {
         "t": 1788382800000,
         "observed": true,
-        "chainBlocks": 43,
+        "chainBlocks": 34,
         "wins": 2,
-        "sharePercent": 4.7
+        "sharePercent": 5.9
       },
       {
         "t": 1788386400000,
