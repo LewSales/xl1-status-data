@@ -1,17 +1,11 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-09T20:57:44.006Z",
+  "generatedAt": "2026-09-09T21:02:43.996Z",
   "status": "degraded",
-  "problemCount": 1,
+  "problemCount": 2,
   "chain": {
-    "network": "sequence",
-    "networkName": "Sequence",
-    "chainId": "4b43a753c8024c0e5000e8ac948ac0063ac624bc",
-    "currentBlock": 593084,
-    "finalizedBlock": 593084,
-    "finalizationLag": 0,
-    "explorerUrl": "https://explore.xyo.network/xl1/sequence"
+    "ok": false
   },
   "producer": {
     "address": "2152e6aec996742fb6e52ae1aad87bd44f2ccc91",
@@ -27,10 +21,7 @@
       "day24hComplete": true
     },
     "lastBlock": 593078,
-    "lastBlockUrl": "https://explore.xyo.network/xl1/sequence/block/number/593078",
-    "blocksSinceLast": 6,
-    "rewardXl1": "80,555.1299",
-    "rewardAddressUrl": "https://explore.xyo.network/xl1/sequence/address/2152e6aec996742fb6e52ae1aad87bd44f2ccc91"
+    "lastBlockUrl": "https://explore.xyo.network/xl1/sequence/block/number/593078"
   },
   "network": {
     "observed": {
@@ -195,10 +186,10 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 85,
-    "retries": 3,
+    "built": 78,
+    "retries": 2,
     "lost": {
-      "txAlreadyFinalized": 3,
+      "txAlreadyFinalized": 2,
       "behindFinalizedHead": 8,
       "blockNumberMismatch": 0
     }
@@ -209,12 +200,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 203ms vs a 1000ms budget"
+        "why": "cycle p50 141ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 87,
-        "why": "11 of 85 builds rejected locally"
+        "why": "10 of 78 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -229,23 +220,23 @@
     ],
     "bottleneck": {
       "key": "competition",
-      "text": "Head advanced first on 73% of rejections — we are being outrun, not failing."
+      "text": "Head advanced first on 80% of rejections — we are being outrun, not failing."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
     "headFetchP50Ms": 3,
-    "headFetchP95Ms": 6,
-    "cycleP50Ms": 203,
-    "cycleP95Ms": 2154,
+    "headFetchP95Ms": 80,
+    "cycleP50Ms": 141,
+    "cycleP95Ms": 2193,
     "stages": {
       "headFetch": 3,
       "blockProduction": 198,
-      "mempoolTx": 176,
-      "mempoolBlocks": 208,
+      "mempoolTx": 175,
+      "mempoolBlocks": 211,
       "submit": 196
     },
-    "samples": 117946
+    "samples": 118017
   },
   "trend": {
     "daily": [
@@ -313,9 +304,9 @@
       {
         "t": 1788382800000,
         "observed": true,
-        "chainBlocks": 67,
+        "chainBlocks": 61,
         "wins": 3,
-        "sharePercent": 4.5
+        "sharePercent": 4.9
       },
       {
         "t": 1788386400000,
