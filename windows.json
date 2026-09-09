@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-09T21:42:44.185Z",
+  "generatedAt": "2026-09-09T21:47:46.099Z",
   "status": "degraded",
   "problemCount": 2,
   "chain": {
@@ -186,26 +186,26 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 19,
+    "built": 11,
     "retries": 1,
     "lost": {
       "txAlreadyFinalized": 1,
-      "behindFinalizedHead": 1,
+      "behindFinalizedHead": 0,
       "blockNumberMismatch": 0
     }
   },
   "operations": {
-    "score": 97,
+    "score": 98,
     "components": [
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 10ms vs a 1000ms budget"
+        "why": "cycle p50 9ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 89,
-        "why": "2 of 19 builds rejected locally"
+        "value": 91,
+        "why": "1 of 11 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -225,18 +225,18 @@
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 10,
-    "headFetchP95Ms": 154,
-    "cycleP50Ms": 10,
-    "cycleP95Ms": 154,
+    "headFetchP50Ms": 9,
+    "headFetchP95Ms": 133,
+    "cycleP50Ms": 9,
+    "cycleP95Ms": 133,
     "stages": {
-      "headFetch": 10,
+      "headFetch": 9,
       "blockProduction": 198,
       "mempoolTx": 175,
       "mempoolBlocks": 211,
       "submit": 196
     },
-    "samples": 118617
+    "samples": 118692
   },
   "trend": {
     "daily": [
@@ -304,8 +304,8 @@
       {
         "t": 1788382800000,
         "observed": true,
-        "chainBlocks": 12,
-        "wins": 2,
+        "chainBlocks": 6,
+        "wins": 1,
         "sharePercent": 16.7
       },
       {
