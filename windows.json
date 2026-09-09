@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-09T21:47:46.099Z",
+  "generatedAt": "2026-09-09T21:52:44.896Z",
   "status": "degraded",
   "problemCount": 2,
   "chain": {
@@ -186,7 +186,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 11,
+    "built": 5,
     "retries": 1,
     "lost": {
       "txAlreadyFinalized": 1,
@@ -195,17 +195,17 @@
     }
   },
   "operations": {
-    "score": 98,
+    "score": 95,
     "components": [
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 9ms vs a 1000ms budget"
+        "why": "cycle p50 8ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 91,
-        "why": "1 of 11 builds rejected locally"
+        "value": 80,
+        "why": "1 of 5 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -225,18 +225,18 @@
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 9,
-    "headFetchP95Ms": 133,
-    "cycleP50Ms": 9,
-    "cycleP95Ms": 133,
+    "headFetchP50Ms": 8,
+    "headFetchP95Ms": 90,
+    "cycleP50Ms": 8,
+    "cycleP95Ms": 90,
     "stages": {
-      "headFetch": 9,
+      "headFetch": 8,
       "blockProduction": 198,
       "mempoolTx": 175,
       "mempoolBlocks": 211,
       "submit": 196
     },
-    "samples": 118692
+    "samples": 118767
   },
   "trend": {
     "daily": [
@@ -303,10 +303,7 @@
     "hours": [
       {
         "t": 1788382800000,
-        "observed": true,
-        "chainBlocks": 6,
-        "wins": 1,
-        "sharePercent": 16.7
+        "observed": false
       },
       {
         "t": 1788386400000,
@@ -1418,9 +1415,9 @@
         "sharePercent": 13.8
       }
     ],
-    "observedHours": 148,
-    "unobservedHours": 20,
-    "producingHours": 139,
+    "observedHours": 147,
+    "unobservedHours": 21,
+    "producingHours": 138,
     "missedHours": 9,
     "producingPercent": 93.9,
     "longestMissedHours": 4,
