@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-09T01:53:12.453Z",
+  "generatedAt": "2026-09-09T01:58:11.599Z",
   "status": "degraded",
   "problemCount": 1,
   "chain": {
@@ -200,7 +200,7 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 13ms vs a 1000ms budget"
+        "why": "cycle p50 11ms vs a 1000ms budget"
       },
       {
         "label": "Win rate",
@@ -220,18 +220,18 @@
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 12,
-    "headFetchP95Ms": 154,
-    "cycleP50Ms": 13,
-    "cycleP95Ms": 154,
+    "headFetchP50Ms": 11,
+    "headFetchP95Ms": 146,
+    "cycleP50Ms": 11,
+    "cycleP95Ms": 146,
     "stages": {
-      "headFetch": 12,
+      "headFetch": 11,
       "blockProduction": 187,
       "mempoolTx": 160,
       "mempoolBlocks": 198,
       "submit": 201
     },
-    "samples": 100912
+    "samples": 100987
   },
   "trend": {
     "daily": [
@@ -298,10 +298,7 @@
     "hours": [
       {
         "t": 1788310800000,
-        "observed": true,
-        "chainBlocks": 6,
-        "wins": 0,
-        "sharePercent": 0
+        "observed": false
       },
       {
         "t": 1788314400000,
@@ -1402,11 +1399,11 @@
         "sharePercent": 15.7
       }
     ],
-    "observedHours": 151,
-    "unobservedHours": 12,
+    "observedHours": 150,
+    "unobservedHours": 13,
     "producingHours": 141,
-    "missedHours": 10,
-    "producingPercent": 93.4,
+    "missedHours": 9,
+    "producingPercent": 94,
     "longestMissedHours": 4,
     "longestMissedEndedAt": "2026-09-03T08:00:00.000Z"
   },
