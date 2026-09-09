@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-09T12:37:44.536Z",
+  "generatedAt": "2026-09-09T12:42:44.179Z",
   "status": "degraded",
   "problemCount": 1,
   "chain": {
@@ -186,26 +186,26 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 87,
-    "retries": 1,
+    "built": 81,
+    "retries": 0,
     "lost": {
-      "txAlreadyFinalized": 1,
-      "behindFinalizedHead": 12,
+      "txAlreadyFinalized": 0,
+      "behindFinalizedHead": 10,
       "blockNumberMismatch": 0
     }
   },
   "operations": {
-    "score": 96,
+    "score": 97,
     "components": [
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 171ms vs a 1000ms budget"
+        "why": "cycle p50 134ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 85,
-        "why": "13 of 87 builds rejected locally"
+        "value": 88,
+        "why": "10 of 81 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -220,23 +220,23 @@
     ],
     "bottleneck": {
       "key": "competition",
-      "text": "Head advanced first on 92% of rejections — we are being outrun, not failing."
+      "text": "Head advanced first on 100% of rejections — we are being outrun, not failing."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 4,
-    "headFetchP95Ms": 57,
-    "cycleP50Ms": 171,
-    "cycleP95Ms": 1433,
+    "headFetchP50Ms": 5,
+    "headFetchP95Ms": 125,
+    "cycleP50Ms": 134,
+    "cycleP95Ms": 1292,
     "stages": {
-      "headFetch": 4,
+      "headFetch": 5,
       "blockProduction": 183,
       "mempoolTx": 173,
       "mempoolBlocks": 197,
       "submit": 192
     },
-    "samples": 110475
+    "samples": 110550
   },
   "trend": {
     "daily": [
@@ -301,22 +301,6 @@
   "continuity": {
     "windowHours": 168,
     "hours": [
-      {
-        "t": 1788354000000,
-        "observed": false
-      },
-      {
-        "t": 1788357600000,
-        "observed": false
-      },
-      {
-        "t": 1788361200000,
-        "observed": false
-      },
-      {
-        "t": 1788364800000,
-        "observed": false
-      },
       {
         "t": 1788368400000,
         "observed": true,
@@ -1422,7 +1406,7 @@
       }
     ],
     "observedHours": 149,
-    "unobservedHours": 20,
+    "unobservedHours": 15,
     "producingHours": 140,
     "missedHours": 9,
     "producingPercent": 94,
