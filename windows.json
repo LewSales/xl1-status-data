@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-23T08:04:17.044Z",
+  "generatedAt": "2026-09-23T08:09:17.077Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -199,22 +199,22 @@
     "retries": 0,
     "lost": {
       "txAlreadyFinalized": 0,
-      "behindFinalizedHead": 6,
+      "behindFinalizedHead": 5,
       "blockNumberMismatch": 0
     }
   },
   "operations": {
-    "score": 98,
+    "score": 99,
     "components": [
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 172ms vs a 1000ms budget"
+        "why": "cycle p50 210ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 93,
-        "why": "6 of 85 builds rejected locally"
+        "value": 94,
+        "why": "5 of 85 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -235,17 +235,17 @@
   "latency": {
     "headFetchMinMs": 0,
     "headFetchP50Ms": 2,
-    "headFetchP95Ms": 79,
-    "cycleP50Ms": 172,
-    "cycleP95Ms": 1094,
+    "headFetchP95Ms": 89,
+    "cycleP50Ms": 210,
+    "cycleP95Ms": 1159,
     "stages": {
       "headFetch": 2,
-      "blockProduction": 158,
-      "mempoolTx": 146,
-      "mempoolBlocks": 168,
-      "submit": 191
+      "blockProduction": 162,
+      "mempoolTx": 147,
+      "mempoolBlocks": 194,
+      "submit": 192
     },
-    "samples": 4191
+    "samples": 4266
   },
   "trend": {
     "daily": [
@@ -301,14 +301,16 @@
       },
       {
         "t": 1790150400000,
-        "observed": false
+        "observed": true,
+        "chainBlocks": 0,
+        "wins": 0
       }
     ],
-    "observedHours": 5,
-    "unobservedHours": 2,
+    "observedHours": 6,
+    "unobservedHours": 1,
     "producingHours": 5,
     "missedHours": 0,
-    "producingPercent": 100,
+    "producingPercent": 83.3,
     "longestMissedHours": 0
   },
   "movement": {
@@ -380,8 +382,8 @@
   "price": {
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
-    "value": 0.00019925,
-    "change24h": -1.26,
+    "value": 0.00020034,
+    "change24h": -0.96,
     "id": "xl1"
   },
   "build": {
