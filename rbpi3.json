@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-09-24T08:38:07.729Z",
+  "generatedAt": "2026-09-24T08:43:27.656Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -200,7 +200,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 111,
+    "built": 112,
     "retries": 3,
     "lost": {
       "txAlreadyFinalized": 3,
@@ -214,12 +214,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 239ms vs a 1000ms budget"
+        "why": "cycle p50 367ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 97,
-        "why": "3 of 111 builds rejected locally"
+        "why": "3 of 112 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -234,23 +234,23 @@
     ],
     "bottleneck": {
       "key": "none",
-      "text": "No local performance constraint detected."
+      "text": "Cycle p95 is 2323ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 21,
-    "headFetchP95Ms": 92,
-    "cycleP50Ms": 239,
-    "cycleP95Ms": 1086,
+    "headFetchP50Ms": 59,
+    "headFetchP95Ms": 97,
+    "cycleP50Ms": 367,
+    "cycleP95Ms": 2323,
     "stages": {
-      "headFetch": 21,
-      "blockProduction": 149,
+      "headFetch": 59,
+      "blockProduction": 151,
       "mempoolTx": 128,
-      "mempoolBlocks": 149,
-      "submit": 151
+      "mempoolBlocks": 208,
+      "submit": 152
     },
-    "samples": 3367
+    "samples": 3443
   },
   "trend": {
     "daily": [
@@ -1664,8 +1664,8 @@
   "price": {
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
-    "value": 0.00019734,
-    "change24h": -1.93,
+    "value": 0.00019631,
+    "change24h": -2.27,
     "id": "xl1"
   },
   "build": {
