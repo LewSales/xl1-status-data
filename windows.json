@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-24T08:39:17.287Z",
+  "generatedAt": "2026-09-24T08:44:17.324Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -23,7 +23,7 @@
       "total": 298,
       "today": 33,
       "week": 298,
-      "day24h": 227,
+      "day24h": 225,
       "day24hComplete": true
     },
     "lastBlock": 625648,
@@ -195,26 +195,26 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 114,
+    "built": 115,
     "retries": 1,
     "lost": {
       "txAlreadyFinalized": 1,
-      "behindFinalizedHead": 4,
+      "behindFinalizedHead": 3,
       "blockNumberMismatch": 0
     }
   },
   "operations": {
-    "score": 98,
+    "score": 99,
     "components": [
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 274ms vs a 1000ms budget"
+        "why": "cycle p50 379ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 96,
-        "why": "5 of 114 builds rejected locally"
+        "value": 97,
+        "why": "4 of 115 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -228,24 +228,24 @@
       }
     ],
     "bottleneck": {
-      "key": "competition",
-      "text": "Head advanced first on 80% of rejections — we are being outrun, not failing."
+      "key": "none",
+      "text": "No local performance constraint detected."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
     "headFetchP50Ms": 2,
-    "headFetchP95Ms": 160,
-    "cycleP50Ms": 274,
-    "cycleP95Ms": 1306,
+    "headFetchP95Ms": 159,
+    "cycleP50Ms": 379,
+    "cycleP95Ms": 1426,
     "stages": {
       "headFetch": 2,
-      "blockProduction": 193,
-      "mempoolTx": 167,
-      "mempoolBlocks": 200,
-      "submit": 188
+      "blockProduction": 199,
+      "mempoolTx": 170,
+      "mempoolBlocks": 244,
+      "submit": 189
     },
-    "samples": 3675
+    "samples": 3750
   },
   "trend": {
     "daily": [
