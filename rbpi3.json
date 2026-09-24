@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-09-24T08:54:37.665Z",
+  "generatedAt": "2026-09-24T09:00:18.687Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -200,7 +200,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 117,
+    "built": 121,
     "retries": 2,
     "lost": {
       "txAlreadyFinalized": 2,
@@ -209,17 +209,17 @@
     }
   },
   "operations": {
-    "score": 99,
+    "score": 100,
     "components": [
       {
         "label": "Latency",
-        "value": 98,
-        "why": "cycle p50 529ms vs a 1000ms budget"
+        "value": 100,
+        "why": "cycle p50 439ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 98,
-        "why": "2 of 117 builds rejected locally"
+        "why": "2 of 121 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -234,23 +234,23 @@
     ],
     "bottleneck": {
       "key": "none",
-      "text": "Cycle p95 is 3132ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
+      "text": "Cycle p95 is 3126ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
     "headFetchP50Ms": 59,
     "headFetchP95Ms": 96,
-    "cycleP50Ms": 529,
-    "cycleP95Ms": 3132,
+    "cycleP50Ms": 439,
+    "cycleP95Ms": 3126,
     "stages": {
       "headFetch": 59,
-      "blockProduction": 177,
+      "blockProduction": 184,
       "mempoolTx": 129,
-      "mempoolBlocks": 353,
-      "submit": 151
+      "mempoolBlocks": 429,
+      "submit": 152
     },
-    "samples": 3609
+    "samples": 3693
   },
   "trend": {
     "daily": [
@@ -381,8 +381,8 @@
       },
       {
         "day": "2026-09-24",
-        "blocks": 113,
-        "earned": 5650.0042
+        "blocks": 114,
+        "earned": 5700.0043
       }
     ],
     "retainDays": 30
@@ -1562,13 +1562,13 @@
       {
         "t": 1790236800000,
         "observed": true,
-        "chainBlocks": 45,
-        "wins": 7,
-        "sharePercent": 15.6
+        "chainBlocks": 49,
+        "wins": 8,
+        "sharePercent": 16.3
       }
     ],
     "observedHours": 168,
-    "unobservedHours": 1,
+    "unobservedHours": 0,
     "producingHours": 168,
     "missedHours": 0,
     "producingPercent": 100,
