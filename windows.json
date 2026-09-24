@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-24T08:59:17.309Z",
+  "generatedAt": "2026-09-24T09:04:17.342Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -23,7 +23,7 @@
       "total": 298,
       "today": 33,
       "week": 298,
-      "day24h": 224,
+      "day24h": 223,
       "day24hComplete": true
     },
     "lastBlock": 625648,
@@ -195,11 +195,11 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 125,
+    "built": 120,
     "retries": 3,
     "lost": {
       "txAlreadyFinalized": 3,
-      "behindFinalizedHead": 4,
+      "behindFinalizedHead": 3,
       "blockNumberMismatch": 0
     }
   },
@@ -209,12 +209,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 480ms vs a 1000ms budget"
+        "why": "cycle p50 498ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 94,
-        "why": "7 of 125 builds rejected locally"
+        "value": 95,
+        "why": "6 of 120 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -228,24 +228,24 @@
       }
     ],
     "bottleneck": {
-      "key": "competition",
-      "text": "Head advanced first on 57% of rejections — we are being outrun, not failing."
+      "key": "mempool",
+      "text": "Stale mempool data caused 50% of rejected candidates."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
     "headFetchP50Ms": 2,
-    "headFetchP95Ms": 169,
-    "cycleP50Ms": 480,
-    "cycleP95Ms": 2767,
+    "headFetchP95Ms": 184,
+    "cycleP50Ms": 498,
+    "cycleP95Ms": 3645,
     "stages": {
       "headFetch": 2,
-      "blockProduction": 225,
-      "mempoolTx": 170,
-      "mempoolBlocks": 394,
+      "blockProduction": 306,
+      "mempoolTx": 172,
+      "mempoolBlocks": 409,
       "submit": 188
     },
-    "samples": 3973
+    "samples": 4041
   },
   "trend": {
     "daily": [
