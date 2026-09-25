@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-09-25T08:47:07.628Z",
+  "generatedAt": "2026-09-25T08:52:47.654Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -23,7 +23,7 @@
       "total": 6283,
       "today": 29,
       "week": 1668,
-      "day24h": 246,
+      "day24h": 245,
       "day24hComplete": true
     },
     "lastBlock": 627807,
@@ -214,7 +214,7 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 158ms vs a 1000ms budget"
+        "why": "cycle p50 216ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
@@ -239,18 +239,18 @@
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 9,
-    "headFetchP95Ms": 72,
-    "cycleP50Ms": 158,
-    "cycleP95Ms": 1028,
+    "headFetchP50Ms": 10,
+    "headFetchP95Ms": 74,
+    "cycleP50Ms": 216,
+    "cycleP95Ms": 1143,
     "stages": {
-      "headFetch": 9,
-      "blockProduction": 137,
-      "mempoolTx": 123,
-      "mempoolBlocks": 144,
+      "headFetch": 10,
+      "blockProduction": 139,
+      "mempoolTx": 124,
+      "mempoolBlocks": 152,
       "submit": 149
     },
-    "samples": 4389
+    "samples": 4474
   },
   "trend": {
     "daily": [
@@ -1567,17 +1567,18 @@
       {
         "t": 1790323200000,
         "observed": true,
-        "chainBlocks": 71,
+        "chainBlocks": 77,
         "wins": 9,
-        "sharePercent": 12.7
+        "sharePercent": 11.7
       }
     ],
     "observedHours": 169,
     "unobservedHours": 0,
-    "producingHours": 169,
-    "missedHours": 0,
-    "producingPercent": 100,
-    "longestMissedHours": 0
+    "producingHours": 168,
+    "missedHours": 1,
+    "producingPercent": 99.4,
+    "longestMissedHours": 1,
+    "longestMissedEndedAt": "2026-09-18T08:00:00.000Z"
   },
   "movement": {
     "comparable": true,
@@ -1669,8 +1670,8 @@
   "price": {
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
-    "value": 0.00019997,
-    "change24h": 1.88,
+    "value": 0.00019991,
+    "change24h": 2.1,
     "id": "xl1"
   },
   "build": {
