@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-09-25T16:19:47.638Z",
+  "generatedAt": "2026-09-25T16:25:07.640Z",
   "status": "degraded",
   "problemCount": 1,
   "chain": {
@@ -23,7 +23,7 @@
       "total": 6379,
       "today": 125,
       "week": 1764,
-      "day24h": 259,
+      "day24h": 256,
       "day24hComplete": true
     },
     "lastBlock": 628466,
@@ -200,7 +200,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 101,
+    "built": 91,
     "retries": 0,
     "lost": {
       "txAlreadyFinalized": 0,
@@ -214,12 +214,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 269ms vs a 1000ms budget"
+        "why": "cycle p50 299ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 99,
-        "why": "1 of 101 builds rejected locally"
+        "why": "1 of 91 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -241,16 +241,16 @@
     "headFetchMinMs": 0,
     "headFetchP50Ms": 11,
     "headFetchP95Ms": 85,
-    "cycleP50Ms": 269,
-    "cycleP95Ms": 987,
+    "cycleP50Ms": 299,
+    "cycleP95Ms": 681,
     "stages": {
       "headFetch": 11,
-      "blockProduction": 224,
-      "mempoolTx": 159,
+      "blockProduction": 253,
+      "mempoolTx": 238,
       "mempoolBlocks": 142,
       "submit": 152
     },
-    "samples": 11160
+    "samples": 11245
   },
   "trend": {
     "daily": [
@@ -1670,7 +1670,7 @@
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
     "value": 0.00020342,
-    "change24h": 2.33,
+    "change24h": 1.87,
     "id": "xl1"
   },
   "build": {
