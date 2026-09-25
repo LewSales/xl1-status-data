@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-25T16:09:21.360Z",
+  "generatedAt": "2026-09-25T16:14:19.043Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -195,7 +195,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 138,
+    "built": 125,
     "retries": 0,
     "lost": {
       "txAlreadyFinalized": 0,
@@ -209,12 +209,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 177ms vs a 1000ms budget"
+        "why": "cycle p50 210ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 92,
-        "why": "11 of 138 builds rejected locally"
+        "value": 91,
+        "why": "11 of 125 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -235,17 +235,17 @@
   "latency": {
     "headFetchMinMs": 0,
     "headFetchP50Ms": 2,
-    "headFetchP95Ms": 120,
-    "cycleP50Ms": 177,
-    "cycleP95Ms": 1133,
+    "headFetchP95Ms": 104,
+    "cycleP50Ms": 210,
+    "cycleP95Ms": 1126,
     "stages": {
       "headFetch": 2,
-      "blockProduction": 170,
-      "mempoolTx": 155,
+      "blockProduction": 205,
+      "mempoolTx": 166,
       "mempoolBlocks": 165,
       "submit": 184
     },
-    "samples": 11515
+    "samples": 11590
   },
   "trend": {
     "daily": [
@@ -700,15 +700,19 @@
       },
       {
         "t": 1790352000000,
-        "observed": false
+        "observed": true,
+        "chainBlocks": 7,
+        "wins": 0,
+        "sharePercent": 0
       }
     ],
-    "observedHours": 60,
-    "unobservedHours": 3,
+    "observedHours": 61,
+    "unobservedHours": 2,
     "producingHours": 60,
-    "missedHours": 0,
-    "producingPercent": 100,
-    "longestMissedHours": 0
+    "missedHours": 1,
+    "producingPercent": 98.4,
+    "longestMissedHours": 1,
+    "longestMissedEndedAt": "2026-09-25T16:00:00.000Z"
   },
   "movement": {
     "comparable": true,
@@ -795,8 +799,8 @@
   "price": {
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
-    "value": 0.00020316,
-    "change24h": 1.79,
+    "value": 0.00020336,
+    "change24h": 2.29,
     "id": "xl1"
   },
   "build": {
