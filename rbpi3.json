@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-09-25T09:20:27.630Z",
+  "generatedAt": "2026-09-25T09:26:07.640Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -200,7 +200,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 132,
+    "built": 133,
     "retries": 0,
     "lost": {
       "txAlreadyFinalized": 0,
@@ -209,17 +209,17 @@
     }
   },
   "operations": {
-    "score": 100,
+    "score": 99,
     "components": [
       {
         "label": "Latency",
-        "value": 100,
-        "why": "cycle p50 396ms vs a 1000ms budget"
+        "value": 98,
+        "why": "cycle p50 536ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 100,
-        "why": "0 of 132 builds rejected locally"
+        "why": "0 of 133 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -234,23 +234,23 @@
     ],
     "bottleneck": {
       "key": "none",
-      "text": "Cycle p95 is 2339ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
+      "text": "Cycle p95 is 3880ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 12,
-    "headFetchP95Ms": 563,
-    "cycleP50Ms": 396,
-    "cycleP95Ms": 2339,
+    "headFetchP50Ms": 48,
+    "headFetchP95Ms": 534,
+    "cycleP50Ms": 536,
+    "cycleP95Ms": 3880,
     "stages": {
-      "headFetch": 12,
-      "blockProduction": 157,
-      "mempoolTx": 124,
-      "mempoolBlocks": 402,
-      "submit": 152
+      "headFetch": 48,
+      "blockProduction": 177,
+      "mempoolTx": 125,
+      "mempoolBlocks": 482,
+      "submit": 153
     },
-    "samples": 4880
+    "samples": 4959
   },
   "trend": {
     "daily": [
@@ -1669,8 +1669,8 @@
   "price": {
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
-    "value": 0.00020094,
-    "change24h": 2.58,
+    "value": 0.00020092,
+    "change24h": 2.51,
     "id": "xl1"
   },
   "build": {
