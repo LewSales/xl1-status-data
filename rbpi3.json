@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-09-25T05:50:47.661Z",
+  "generatedAt": "2026-09-25T05:55:57.764Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -23,7 +23,7 @@
       "total": 6254,
       "today": 248,
       "week": 1912,
-      "day24h": 249,
+      "day24h": 248,
       "day24hComplete": true
     },
     "lastBlock": 627537,
@@ -200,11 +200,11 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 118,
+    "built": 115,
     "retries": 0,
     "lost": {
       "txAlreadyFinalized": 0,
-      "behindFinalizedHead": 1,
+      "behindFinalizedHead": 0,
       "blockNumberMismatch": 0
     }
   },
@@ -214,12 +214,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 245ms vs a 1000ms budget"
+        "why": "cycle p50 380ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 99,
-        "why": "1 of 118 builds rejected locally"
+        "value": 100,
+        "why": "0 of 115 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -234,23 +234,23 @@
     ],
     "bottleneck": {
       "key": "none",
-      "text": "No local performance constraint detected."
+      "text": "Cycle p95 is 2310ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
     }
   },
   "latency": {
     "headFetchMinMs": 5,
     "headFetchP50Ms": 9,
-    "headFetchP95Ms": 71,
-    "cycleP50Ms": 245,
-    "cycleP95Ms": 1296,
+    "headFetchP95Ms": 75,
+    "cycleP50Ms": 380,
+    "cycleP95Ms": 2310,
     "stages": {
       "headFetch": 9,
-      "blockProduction": 137,
+      "blockProduction": 138,
       "mempoolTx": 124,
-      "mempoolBlocks": 183,
-      "submit": 152
+      "mempoolBlocks": 327,
+      "submit": 153
     },
-    "samples": 1745
+    "samples": 1821
   },
   "trend": {
     "daily": [
@@ -1572,9 +1572,9 @@
         "sharePercent": 13
       }
     ],
-    "observedHours": 169,
-    "unobservedHours": 0,
-    "producingHours": 169,
+    "observedHours": 168,
+    "unobservedHours": 1,
+    "producingHours": 168,
     "missedHours": 0,
     "producingPercent": 100,
     "longestMissedHours": 0
@@ -1669,8 +1669,8 @@
   "price": {
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
-    "value": 0.00019978,
-    "change24h": 0.97,
+    "value": 0.00019982,
+    "change24h": 0.92,
     "id": "xl1"
   },
   "build": {
