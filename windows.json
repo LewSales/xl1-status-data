@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-25T08:54:18.223Z",
+  "generatedAt": "2026-09-25T08:59:18.239Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -195,7 +195,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 122,
+    "built": 121,
     "retries": 1,
     "lost": {
       "txAlreadyFinalized": 1,
@@ -209,12 +209,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 231ms vs a 1000ms budget"
+        "why": "cycle p50 332ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 92,
-        "why": "10 of 122 builds rejected locally"
+        "why": "10 of 121 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -235,17 +235,17 @@
   "latency": {
     "headFetchMinMs": 0,
     "headFetchP50Ms": 2,
-    "headFetchP95Ms": 147,
-    "cycleP50Ms": 231,
-    "cycleP95Ms": 1372,
+    "headFetchP95Ms": 145,
+    "cycleP50Ms": 332,
+    "cycleP95Ms": 1983,
     "stages": {
       "headFetch": 2,
-      "blockProduction": 189,
+      "blockProduction": 191,
       "mempoolTx": 162,
-      "mempoolBlocks": 196,
+      "mempoolBlocks": 247,
       "submit": 188
     },
-    "samples": 5017
+    "samples": 5091
   },
   "trend": {
     "daily": [
@@ -742,8 +742,8 @@
   "price": {
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
-    "value": 0.00019995,
-    "change24h": 1.86,
+    "value": 0.00020056,
+    "change24h": 2.38,
     "id": "xl1"
   },
   "build": {
