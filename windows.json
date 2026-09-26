@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-26T11:39:18.342Z",
+  "generatedAt": "2026-09-26T11:44:18.733Z",
   "status": "degraded",
   "problemCount": 1,
   "chain": {
@@ -17,7 +17,7 @@
       "total": 4353,
       "today": 66,
       "week": 1480,
-      "day24h": 275,
+      "day24h": 274,
       "day24hComplete": true
     },
     "lastBlock": 630429,
@@ -186,7 +186,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 87,
+    "built": 82,
     "retries": 1,
     "lost": {
       "txAlreadyFinalized": 1,
@@ -200,12 +200,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 276ms vs a 1000ms budget"
+        "why": "cycle p50 242ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 98,
-        "why": "2 of 87 builds rejected locally"
+        "why": "2 of 82 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -220,23 +220,23 @@
     ],
     "bottleneck": {
       "key": "none",
-      "text": "Cycle p95 is 4006ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
+      "text": "Cycle p95 is 7065ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 97,
-    "headFetchP95Ms": 4006,
-    "cycleP50Ms": 276,
-    "cycleP95Ms": 4006,
+    "headFetchP50Ms": 77,
+    "headFetchP95Ms": 7065,
+    "cycleP50Ms": 242,
+    "cycleP95Ms": 7065,
     "stages": {
-      "headFetch": 97,
+      "headFetch": 77,
       "blockProduction": 195,
       "mempoolTx": 183,
       "mempoolBlocks": 197,
       "submit": 184
     },
-    "samples": 29000
+    "samples": 29058
   },
   "trend": {
     "daily": [
