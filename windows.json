@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-26T18:39:18.176Z",
+  "generatedAt": "2026-09-26T18:44:18.177Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -195,7 +195,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 103,
+    "built": 105,
     "retries": 2,
     "lost": {
       "txAlreadyFinalized": 2,
@@ -209,12 +209,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 332ms vs a 1000ms budget"
+        "why": "cycle p50 426ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 98,
-        "why": "2 of 103 builds rejected locally"
+        "why": "2 of 105 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -229,23 +229,25 @@
     ],
     "bottleneck": {
       "key": "none",
-      "text": "No local performance constraint detected."
+      "text": "Cycle p95 is 2212ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 102,
-    "headFetchP95Ms": 218,
-    "cycleP50Ms": 332,
-    "cycleP95Ms": 1356,
+    "headFetchP50Ms": 98,
+    "headFetchP95Ms": 214,
+    "cycleP50Ms": 426,
+    "cycleP95Ms": 2212,
     "stages": {
-      "headFetch": 102,
-      "blockProduction": 193,
-      "mempoolTx": 169,
-      "mempoolBlocks": 205,
-      "submit": 180
+      "headFetch": 98,
+      "blockProduction": 198,
+      "mempoolTx": 164,
+      "mempoolBlocks": 250,
+      "submit": 182,
+      "timePayload": 575,
+      "rewardTransfers": 0
     },
-    "samples": 35255
+    "samples": 35330
   },
   "trend": {
     "daily": [
@@ -985,8 +987,8 @@
   "price": {
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
-    "value": 0.00021213,
-    "change24h": 2.97,
+    "value": 0.00021203,
+    "change24h": 2.91,
     "id": "xl1"
   },
   "build": {
