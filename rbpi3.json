@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-09-27T21:50:50.173Z",
+  "generatedAt": "2026-09-27T21:55:55.015Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -200,7 +200,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 106,
+    "built": 109,
     "retries": 0,
     "lost": {
       "txAlreadyFinalized": 0,
@@ -214,12 +214,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 316ms vs a 1000ms budget"
+        "why": "cycle p50 462ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 100,
-        "why": "0 of 106 builds rejected locally"
+        "why": "0 of 109 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -234,23 +234,23 @@
     ],
     "bottleneck": {
       "key": "none",
-      "text": "No local performance constraint detected."
+      "text": "Cycle p95 is 2562ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 87,
-    "headFetchP95Ms": 148,
-    "cycleP50Ms": 316,
-    "cycleP95Ms": 1184,
+    "headFetchP50Ms": 88,
+    "headFetchP95Ms": 171,
+    "cycleP50Ms": 462,
+    "cycleP95Ms": 2562,
     "stages": {
-      "headFetch": 87,
-      "blockProduction": 142,
-      "mempoolTx": 131,
-      "mempoolBlocks": 185,
+      "headFetch": 88,
+      "blockProduction": 143,
+      "mempoolTx": 132,
+      "mempoolBlocks": 301,
       "submit": 147
     },
-    "samples": 6653
+    "samples": 6745
   },
   "trend": {
     "daily": [
@@ -1582,13 +1582,12 @@
         "sharePercent": 10.5
       }
     ],
-    "observedHours": 169,
-    "unobservedHours": 0,
+    "observedHours": 168,
+    "unobservedHours": 1,
     "producingHours": 168,
-    "missedHours": 1,
-    "producingPercent": 99.4,
-    "longestMissedHours": 1,
-    "longestMissedEndedAt": "2026-09-20T21:00:00.000Z"
+    "missedHours": 0,
+    "producingPercent": 100,
+    "longestMissedHours": 0
   },
   "movement": {
     "comparable": true,
