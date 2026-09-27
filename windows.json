@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-27T21:49:17.262Z",
+  "generatedAt": "2026-09-27T21:54:17.270Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -23,7 +23,7 @@
       "total": 4747,
       "today": 214,
       "week": 1646,
-      "day24h": 303,
+      "day24h": 302,
       "day24hComplete": true
     },
     "lastBlock": 633673,
@@ -196,9 +196,9 @@
   "race": {
     "windowSeconds": 3600,
     "built": 107,
-    "retries": 2,
+    "retries": 1,
     "lost": {
-      "txAlreadyFinalized": 2,
+      "txAlreadyFinalized": 1,
       "behindFinalizedHead": 1,
       "blockNumberMismatch": 0
     }
@@ -209,12 +209,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 361ms vs a 1000ms budget"
+        "why": "cycle p50 436ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 97,
-        "why": "3 of 107 builds rejected locally"
+        "value": 98,
+        "why": "2 of 107 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -229,25 +229,25 @@
     ],
     "bottleneck": {
       "key": "none",
-      "text": "No local performance constraint detected."
+      "text": "Cycle p95 is 2234ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 139,
-    "headFetchP95Ms": 268,
-    "cycleP50Ms": 361,
-    "cycleP95Ms": 1370,
+    "headFetchP50Ms": 125,
+    "headFetchP95Ms": 250,
+    "cycleP50Ms": 436,
+    "cycleP95Ms": 2234,
     "stages": {
-      "headFetch": 139,
+      "headFetch": 125,
       "blockProduction": 204,
       "mempoolTx": 197,
-      "mempoolBlocks": 204,
-      "submit": 171,
-      "timePayload": 570,
+      "mempoolBlocks": 244,
+      "submit": 175,
+      "timePayload": 601,
       "rewardTransfers": 0
     },
-    "samples": 20252
+    "samples": 20346
   },
   "trend": {
     "daily": [
@@ -1181,8 +1181,8 @@
   "price": {
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
-    "value": 0.00020694,
-    "change24h": -4.4,
+    "value": 0.00020659,
+    "change24h": -4.49,
     "id": "xl1"
   },
   "build": {
