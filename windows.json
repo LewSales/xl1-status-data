@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-28T15:09:17.646Z",
+  "generatedAt": "2026-09-28T15:14:17.667Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -23,7 +23,7 @@
       "total": 4941,
       "today": 106,
       "week": 1578,
-      "day24h": 288,
+      "day24h": 286,
       "day24hComplete": true
     },
     "lastBlock": 634786,
@@ -195,7 +195,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 72,
+    "built": 74,
     "retries": 0,
     "lost": {
       "txAlreadyFinalized": 0,
@@ -204,17 +204,17 @@
     }
   },
   "operations": {
-    "score": 91,
+    "score": 92,
     "components": [
       {
         "label": "Latency",
-        "value": 95,
-        "why": "cycle p50 582ms vs a 1000ms budget"
+        "value": 98,
+        "why": "cycle p50 528ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 99,
-        "why": "1 of 72 builds rejected locally"
+        "why": "1 of 74 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -229,25 +229,25 @@
     ],
     "bottleneck": {
       "key": "none",
-      "text": "No local performance constraint detected."
+      "text": "Cycle p95 is 2185ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 348,
-    "headFetchP95Ms": 527,
-    "cycleP50Ms": 582,
-    "cycleP95Ms": 1694,
+    "headFetchP50Ms": 218,
+    "headFetchP95Ms": 447,
+    "cycleP50Ms": 528,
+    "cycleP95Ms": 2185,
     "stages": {
-      "headFetch": 348,
-      "blockProduction": 304,
-      "mempoolTx": 233,
-      "mempoolBlocks": 203,
-      "submit": 173,
-      "timePayload": 587,
+      "headFetch": 218,
+      "blockProduction": 306,
+      "mempoolTx": 236,
+      "mempoolBlocks": 240,
+      "submit": 174,
+      "timePayload": 603,
       "rewardTransfers": 0
     },
-    "samples": 40992
+    "samples": 41092
   },
   "trend": {
     "daily": [
@@ -1214,14 +1214,16 @@
       },
       {
         "t": 1790607600000,
-        "observed": false
+        "observed": true,
+        "chainBlocks": 0,
+        "wins": 0
       }
     ],
-    "observedHours": 131,
-    "unobservedHours": 3,
+    "observedHours": 132,
+    "unobservedHours": 2,
     "producingHours": 131,
     "missedHours": 0,
-    "producingPercent": 100,
+    "producingPercent": 99.2,
     "longestMissedHours": 0
   },
   "movement": {
