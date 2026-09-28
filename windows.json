@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-28T15:04:17.616Z",
+  "generatedAt": "2026-09-28T15:09:17.646Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -195,26 +195,26 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 70,
-    "retries": 1,
+    "built": 72,
+    "retries": 0,
     "lost": {
-      "txAlreadyFinalized": 1,
+      "txAlreadyFinalized": 0,
       "behindFinalizedHead": 1,
       "blockNumberMismatch": 0
     }
   },
   "operations": {
-    "score": 89,
+    "score": 91,
     "components": [
       {
         "label": "Latency",
-        "value": 88,
-        "why": "cycle p50 682ms vs a 1000ms budget"
+        "value": 95,
+        "why": "cycle p50 582ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 97,
-        "why": "2 of 70 builds rejected locally"
+        "value": 99,
+        "why": "1 of 72 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -234,20 +234,20 @@
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 398,
-    "headFetchP95Ms": 788,
-    "cycleP50Ms": 682,
-    "cycleP95Ms": 1304,
+    "headFetchP50Ms": 348,
+    "headFetchP95Ms": 527,
+    "cycleP50Ms": 582,
+    "cycleP95Ms": 1694,
     "stages": {
-      "headFetch": 398,
-      "blockProduction": 298,
-      "mempoolTx": 231,
-      "mempoolBlocks": 183,
+      "headFetch": 348,
+      "blockProduction": 304,
+      "mempoolTx": 233,
+      "mempoolBlocks": 203,
       "submit": 173,
-      "timePayload": 581,
+      "timePayload": 587,
       "rewardTransfers": 0
     },
-    "samples": 40893
+    "samples": 40992
   },
   "trend": {
     "daily": [
@@ -278,8 +278,8 @@
       },
       {
         "day": "2026-09-28",
-        "blocks": 168,
-        "earned": 8400.007
+        "blocks": 169,
+        "earned": 8450.007
       }
     ],
     "retainDays": 30
@@ -1211,10 +1211,14 @@
         "chainBlocks": 58,
         "wins": 4,
         "sharePercent": 6.9
+      },
+      {
+        "t": 1790607600000,
+        "observed": false
       }
     ],
     "observedHours": 131,
-    "unobservedHours": 2,
+    "unobservedHours": 3,
     "producingHours": 131,
     "missedHours": 0,
     "producingPercent": 100,
@@ -1305,8 +1309,8 @@
   "price": {
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
-    "value": 0.00020543,
-    "change24h": -0.33,
+    "value": 0.00020549,
+    "change24h": -0.4,
     "id": "xl1"
   },
   "build": {
