@@ -1,15 +1,15 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-09-30T04:39:16.854Z",
+  "generatedAt": "2026-09-30T04:44:16.855Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
     "network": "sequence",
     "networkName": "Sequence",
     "chainId": "4b43a753c8024c0e5000e8ac948ac0063ac624bc",
-    "currentBlock": 637281,
-    "finalizedBlock": 637281,
+    "currentBlock": 637288,
+    "finalizedBlock": 637288,
     "finalizationLag": 0,
     "explorerUrl": "https://explore.xyo.network/xl1/sequence"
   },
@@ -23,20 +23,20 @@
       "total": 5230,
       "today": 153,
       "week": 1670,
-      "day24h": 165,
+      "day24h": 166,
       "day24hComplete": true
     },
     "lastBlock": 637279,
     "lastBlockUrl": "https://explore.xyo.network/xl1/sequence/block/number/637279",
-    "blocksSinceLast": 2,
+    "blocksSinceLast": 9,
     "rewardXl1": "261,605.3083",
     "rewardAddressUrl": "https://explore.xyo.network/xl1/sequence/address/2152e6aec996742fb6e52ae1aad87bd44f2ccc91"
   },
   "network": {
     "observed": {
-      "blocks": 60023,
+      "blocks": 60030,
       "fromBlock": 577263,
-      "toBlock": 637281,
+      "toBlock": 637288,
       "since": "2026-08-30T19:02:45.136Z",
       "behind": 0,
       "daysStored": 31,
@@ -45,7 +45,7 @@
     },
     "concentration": {
       "producers": 8,
-      "blocks": 60023,
+      "blocks": 60030,
       "leaderShare": 17.85,
       "top3Share": 52.75,
       "nakamoto": 3,
@@ -53,7 +53,7 @@
       "evenShare": 12.5
     },
     "blockTime": {
-      "samples": 54484,
+      "samples": 54491,
       "meanSeconds": 42,
       "medianSeconds": 50,
       "p90Seconds": 60,
@@ -94,16 +94,16 @@
         514,
         4712,
         7347,
-        3375,
+        3376,
         2383,
-        1814,
-        1515,
+        1815,
+        1516,
         1483,
-        1492,
+        1493,
         1335,
         1338,
-        1773,
-        25132,
+        1774,
+        25134,
         132,
         24,
         5,
@@ -128,7 +128,7 @@
     "standings": [
       {
         "address": "81b835c16e6da6152b4d9ebd7e55162f762767a1",
-        "blocks": 10714,
+        "blocks": 10717,
         "sharePercent": 17.85,
         "rank": 1,
         "isSelf": false,
@@ -136,7 +136,7 @@
       },
       {
         "address": "8a499c81cb6a8106933f66a6cfdd6ea6439575e3",
-        "blocks": 10647,
+        "blocks": 10648,
         "sharePercent": 17.74,
         "rank": 2,
         "isSelf": false,
@@ -153,14 +153,14 @@
       {
         "address": "ca08120874f071739d932b24da41cc13299123b3",
         "blocks": 7614,
-        "sharePercent": 12.69,
+        "sharePercent": 12.68,
         "rank": 4,
         "isSelf": false,
         "url": "https://explore.xyo.network/xl1/sequence/address/ca08120874f071739d932b24da41cc13299123b3"
       },
       {
         "address": "fb4c535221f91c1811bd42f70b6ec305aa658551",
-        "blocks": 6381,
+        "blocks": 6382,
         "sharePercent": 10.63,
         "rank": 5,
         "isSelf": false,
@@ -176,7 +176,7 @@
       },
       {
         "address": "a6567633ac83a7017f3a2ef20fbbed890a2adae9",
-        "blocks": 5148,
+        "blocks": 5150,
         "sharePercent": 8.58,
         "rank": 7,
         "isSelf": false,
@@ -199,12 +199,12 @@
     "retries": 10,
     "lost": {
       "txAlreadyFinalized": 10,
-      "behindFinalizedHead": 0,
+      "behindFinalizedHead": 2,
       "blockNumberMismatch": 0
     }
   },
   "operations": {
-    "score": 90,
+    "score": 89,
     "components": [
       {
         "label": "Latency",
@@ -213,8 +213,8 @@
       },
       {
         "label": "Race health",
-        "value": 89,
-        "why": "10 of 92 builds rejected locally"
+        "value": 87,
+        "why": "12 of 92 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -229,25 +229,25 @@
     ],
     "bottleneck": {
       "key": "mempool",
-      "text": "Stale mempool data caused 100% of rejected candidates."
+      "text": "Stale mempool data caused 83% of rejected candidates."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 105,
-    "headFetchP95Ms": 419,
+    "headFetchP50Ms": 109,
+    "headFetchP95Ms": 498,
     "cycleP50Ms": 292,
-    "cycleP95Ms": 1080,
+    "cycleP95Ms": 1182,
     "stages": {
-      "headFetch": 105,
-      "blockProduction": 172,
-      "mempoolTx": 161,
-      "mempoolBlocks": 143,
+      "headFetch": 109,
+      "blockProduction": 169,
+      "mempoolTx": 162,
+      "mempoolBlocks": 145,
       "submit": 159,
-      "timePayload": 557,
+      "timePayload": 558,
       "rewardTransfers": 0
     },
-    "samples": 5623
+    "samples": 5719
   },
   "trend": {
     "daily": [
@@ -288,8 +288,8 @@
       },
       {
         "day": "2026-09-30",
-        "blocks": 85,
-        "earned": 4250.0062
+        "blocks": 86,
+        "earned": 4300.0063
       }
     ],
     "retainDays": 30
@@ -1460,9 +1460,9 @@
       {
         "t": 1790740800000,
         "observed": true,
-        "chainBlocks": 52,
-        "wins": 7,
-        "sharePercent": 13.5
+        "chainBlocks": 60,
+        "wins": 8,
+        "sharePercent": 13.3
       }
     ],
     "observedHours": 166,
@@ -1483,23 +1483,23 @@
         "previousBlocks": 1272,
         "sharePercent": 12.16,
         "previousSharePercent": 7.06,
-        "deltaPercent": 5.11
+        "deltaPercent": 5.1
       },
       {
         "address": "a6567633ac83a7017f3a2ef20fbbed890a2adae9",
         "url": "https://explore.xyo.network/xl1/sequence/address/a6567633ac83a7017f3a2ef20fbbed890a2adae9",
-        "blocks": 1761,
+        "blocks": 1763,
         "previousBlocks": 1484,
         "sharePercent": 12.83,
         "previousSharePercent": 8.23,
-        "deltaPercent": 4.59
+        "deltaPercent": 4.6
       },
       {
         "address": "ca08120874f071739d932b24da41cc13299123b3",
         "url": "https://explore.xyo.network/xl1/sequence/address/ca08120874f071739d932b24da41cc13299123b3",
         "blocks": 1831,
         "previousBlocks": 2126,
-        "sharePercent": 13.34,
+        "sharePercent": 13.33,
         "previousSharePercent": 11.79,
         "deltaPercent": 1.54
       },
@@ -1515,9 +1515,9 @@
       {
         "address": "fb4c535221f91c1811bd42f70b6ec305aa658551",
         "url": "https://explore.xyo.network/xl1/sequence/address/fb4c535221f91c1811bd42f70b6ec305aa658551",
-        "blocks": 1545,
+        "blocks": 1546,
         "previousBlocks": 2081,
-        "sharePercent": 11.25,
+        "sharePercent": 11.26,
         "previousSharePercent": 11.54,
         "deltaPercent": -0.29
       },
@@ -1526,14 +1526,14 @@
         "url": "https://explore.xyo.network/xl1/sequence/address/7ac8355c0ed1b6404da1ce7fe87a23394bab8056",
         "blocks": 1875,
         "previousBlocks": 3007,
-        "sharePercent": 13.66,
+        "sharePercent": 13.65,
         "previousSharePercent": 16.68,
-        "deltaPercent": -3.02
+        "deltaPercent": -3.03
       },
       {
         "address": "8a499c81cb6a8106933f66a6cfdd6ea6439575e3",
         "url": "https://explore.xyo.network/xl1/sequence/address/8a499c81cb6a8106933f66a6cfdd6ea6439575e3",
-        "blocks": 1952,
+        "blocks": 1953,
         "previousBlocks": 3218,
         "sharePercent": 14.22,
         "previousSharePercent": 17.85,
@@ -1542,11 +1542,11 @@
       {
         "address": "81b835c16e6da6152b4d9ebd7e55162f762767a1",
         "url": "https://explore.xyo.network/xl1/sequence/address/81b835c16e6da6152b4d9ebd7e55162f762767a1",
-        "blocks": 1903,
+        "blocks": 1906,
         "previousBlocks": 3400,
-        "sharePercent": 13.86,
+        "sharePercent": 13.88,
         "previousSharePercent": 18.86,
-        "deltaPercent": -5
+        "deltaPercent": -4.98
       }
     ],
     "seenToday": 8,
