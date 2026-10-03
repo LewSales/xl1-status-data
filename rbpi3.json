@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-10-03T11:04:40.145Z",
+  "generatedAt": "2026-10-03T11:09:54.997Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -214,7 +214,7 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 207ms vs a 1000ms budget"
+        "why": "cycle p50 358ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
@@ -239,18 +239,18 @@
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 65,
-    "headFetchP95Ms": 213,
-    "cycleP50Ms": 207,
-    "cycleP95Ms": 773,
+    "headFetchP50Ms": 68,
+    "headFetchP95Ms": 235,
+    "cycleP50Ms": 358,
+    "cycleP95Ms": 3285,
     "stages": {
-      "headFetch": 65,
-      "blockProduction": 132,
-      "mempoolTx": 123,
-      "mempoolBlocks": 141,
+      "headFetch": 68,
+      "blockProduction": 133,
+      "mempoolTx": 124,
+      "mempoolBlocks": 185,
       "submit": 149
     },
-    "samples": 68534
+    "samples": 68628
   },
   "trend": {
     "daily": [
@@ -1586,15 +1586,19 @@
       },
       {
         "t": 1791025200000,
-        "observed": false
+        "observed": true,
+        "chainBlocks": 6,
+        "wins": 0,
+        "sharePercent": 0
       }
     ],
-    "observedHours": 168,
-    "unobservedHours": 1,
+    "observedHours": 169,
+    "unobservedHours": 0,
     "producingHours": 168,
-    "missedHours": 0,
-    "producingPercent": 100,
-    "longestMissedHours": 0
+    "missedHours": 1,
+    "producingPercent": 99.4,
+    "longestMissedHours": 1,
+    "longestMissedEndedAt": "2026-10-03T11:00:00.000Z"
   },
   "movement": {
     "comparable": true,
