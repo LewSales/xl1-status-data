@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-10-03T11:04:17.098Z",
+  "generatedAt": "2026-10-03T11:09:17.106Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -23,7 +23,7 @@
       "total": 6473,
       "today": 112,
       "week": 1940,
-      "day24h": 456,
+      "day24h": 455,
       "day24hComplete": true
     },
     "lastBlock": 646627,
@@ -195,7 +195,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 133,
+    "built": 126,
     "retries": 4,
     "lost": {
       "txAlreadyFinalized": 4,
@@ -209,12 +209,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 321ms vs a 1000ms budget"
+        "why": "cycle p50 416ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 97,
-        "why": "4 of 133 builds rejected locally"
+        "why": "4 of 126 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -229,25 +229,25 @@
     ],
     "bottleneck": {
       "key": "none",
-      "text": "No local performance constraint detected."
+      "text": "Cycle p95 is 2462ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 109,
-    "headFetchP95Ms": 278,
-    "cycleP50Ms": 321,
-    "cycleP95Ms": 999,
+    "headFetchP50Ms": 107,
+    "headFetchP95Ms": 266,
+    "cycleP50Ms": 416,
+    "cycleP95Ms": 2462,
     "stages": {
-      "headFetch": 109,
-      "blockProduction": 200,
+      "headFetch": 107,
+      "blockProduction": 201,
       "mempoolTx": 190,
-      "mempoolBlocks": 184,
+      "mempoolBlocks": 207,
       "submit": 181,
-      "timePayload": 407,
+      "timePayload": 403,
       "rewardTransfers": 0
     },
-    "samples": 37118
+    "samples": 37211
   },
   "trend": {
     "daily": [
@@ -1477,14 +1477,16 @@
       },
       {
         "t": 1791025200000,
-        "observed": false
+        "observed": true,
+        "chainBlocks": 0,
+        "wins": 0
       }
     ],
-    "observedHours": 166,
-    "unobservedHours": 3,
+    "observedHours": 167,
+    "unobservedHours": 2,
     "producingHours": 164,
     "missedHours": 2,
-    "producingPercent": 98.8,
+    "producingPercent": 98.2,
     "longestMissedHours": 1,
     "longestMissedEndedAt": "2026-09-29T15:00:00.000Z"
   },
