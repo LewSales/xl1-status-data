@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-10-04T07:53:22.741Z",
+  "generatedAt": "2026-10-04T07:58:55.487Z",
   "status": "degraded",
   "problemCount": 1,
   "chain": {
@@ -191,7 +191,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 105,
+    "built": 93,
     "retries": 0,
     "lost": {
       "txAlreadyFinalized": 0,
@@ -205,12 +205,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 212ms vs a 1000ms budget"
+        "why": "cycle p50 229ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 100,
-        "why": "0 of 105 builds rejected locally"
+        "why": "0 of 93 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -225,30 +225,30 @@
     ],
     "bottleneck": {
       "key": "none",
-      "text": "No local performance constraint detected."
+      "text": "Cycle p95 is 10018ms against a 1000ms budget — the producing tail, not the typical cycle. No check skipped and no publish rejected, so it is costing nothing measurable."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 60,
-    "headFetchP95Ms": 251,
-    "cycleP50Ms": 212,
-    "cycleP95Ms": 906,
+    "headFetchP50Ms": 61,
+    "headFetchP95Ms": 10018,
+    "cycleP50Ms": 229,
+    "cycleP95Ms": 10018,
     "stages": {
-      "headFetch": 60,
+      "headFetch": 61,
       "blockProduction": 138,
       "mempoolTx": 127,
       "mempoolBlocks": 136,
       "submit": 144
     },
-    "samples": 93061
+    "samples": 93089
   },
   "trend": {
     "daily": [
       {
         "day": "2026-09-04",
-        "blocks": 177,
-        "earned": 8103.0036
+        "blocks": 176,
+        "earned": 8053.0035
       },
       {
         "day": "2026-09-05",
@@ -1583,13 +1583,12 @@
         "sharePercent": 20
       }
     ],
-    "observedHours": 169,
+    "observedHours": 168,
     "unobservedHours": 0,
     "producingHours": 168,
-    "missedHours": 1,
-    "producingPercent": 99.4,
-    "longestMissedHours": 1,
-    "longestMissedEndedAt": "2026-09-27T07:00:00.000Z"
+    "missedHours": 0,
+    "producingPercent": 100,
+    "longestMissedHours": 0
   },
   "movement": {
     "comparable": true,
