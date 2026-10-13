@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-10-13T20:03:45.027Z",
+  "generatedAt": "2026-10-13T20:09:25.030Z",
   "status": "degraded",
   "problemCount": 1,
   "chain": {
@@ -23,7 +23,7 @@
       "total": 10750,
       "today": 775,
       "week": 10750,
-      "day24h": 1230,
+      "day24h": 1226,
       "day24hComplete": true
     },
     "lastBlock": 1783787,
@@ -208,26 +208,26 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 343,
-    "retries": 7,
+    "built": 319,
+    "retries": 5,
     "lost": {
-      "txAlreadyFinalized": 6,
+      "txAlreadyFinalized": 4,
       "behindFinalizedHead": 0,
       "blockNumberMismatch": 0
     }
   },
   "operations": {
-    "score": 100,
+    "score": 94,
     "components": [
       {
         "label": "Latency",
-        "value": 100,
-        "why": "cycle p50 484ms vs a 1000ms budget"
+        "value": 76,
+        "why": "cycle p50 866ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 98,
-        "why": "6 of 343 builds rejected locally"
+        "value": 99,
+        "why": "4 of 319 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -241,24 +241,24 @@
       }
     ],
     "bottleneck": {
-      "key": "mempool",
-      "text": "Stale mempool data caused 100% of rejected candidates."
+      "key": "cycle",
+      "text": "Cycle p95 is 6230ms against a 1000ms budget, and it is costing work: 6 check(s) skipped, 0 publish(es) rejected."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 74,
-    "headFetchP95Ms": 357,
-    "cycleP50Ms": 484,
-    "cycleP95Ms": 2729,
+    "headFetchP50Ms": 77,
+    "headFetchP95Ms": 332,
+    "cycleP50Ms": 866,
+    "cycleP95Ms": 6230,
     "stages": {
-      "headFetch": 74,
-      "blockProduction": 653,
-      "mempoolTx": 139,
-      "mempoolBlocks": 167,
+      "headFetch": 77,
+      "blockProduction": 656,
+      "mempoolTx": 141,
+      "mempoolBlocks": 374,
       "submit": 144
     },
-    "samples": 28052
+    "samples": 28122
   },
   "trend": {
     "daily": [
@@ -1446,14 +1446,16 @@
       },
       {
         "t": 1791921600000,
-        "observed": false
+        "observed": true,
+        "chainBlocks": 0,
+        "wins": 0
       }
     ],
-    "observedHours": 163,
-    "unobservedHours": 1,
+    "observedHours": 164,
+    "unobservedHours": 0,
     "producingHours": 163,
     "missedHours": 0,
-    "producingPercent": 100,
+    "producingPercent": 99.4,
     "longestMissedHours": 0
   },
   "movement": {
@@ -1536,10 +1538,10 @@
   },
   "price": {
     "currency": "usd",
-    "value": 0.00019751,
-    "change24h": 0.15,
+    "value": 0.00019732,
+    "change24h": -0.23,
     "id": "xl1",
-    "notional": 101.44
+    "notional": 101.34
   },
   "rewards": {
     "network": "mainnet",
