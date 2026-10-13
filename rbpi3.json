@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-10-13T03:38:25.084Z",
+  "generatedAt": "2026-10-13T03:43:43.099Z",
   "status": "degraded",
   "problemCount": 1,
   "chain": {
@@ -23,12 +23,13 @@
       "total": 9853,
       "today": 970,
       "week": 9853,
-      "day24h": 1112,
+      "day24h": 1108,
       "day24hComplete": true
     },
     "lastBlock": 1777971,
     "lastBlockUrl": "https://explore.xyo.network/xl1/mainnet/block/number/1777971",
     "blocksSinceLast": 2,
+    "rewardXl1": "470,967.5256",
     "rewardAddressUrl": "https://explore.xyo.network/xl1/mainnet/address/ca08120874f071739d932b24da41cc13299123b3"
   },
   "network": {
@@ -207,10 +208,10 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 345,
-    "retries": 2,
+    "built": 316,
+    "retries": 1,
     "lost": {
-      "txAlreadyFinalized": 2,
+      "txAlreadyFinalized": 1,
       "behindFinalizedHead": 0,
       "blockNumberMismatch": 0
     }
@@ -220,13 +221,13 @@
     "components": [
       {
         "label": "Latency",
-        "value": 98,
-        "why": "cycle p50 528ms vs a 1000ms budget"
+        "value": 94,
+        "why": "cycle p50 586ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 99,
-        "why": "2 of 345 builds rejected locally"
+        "value": 100,
+        "why": "1 of 316 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -241,23 +242,23 @@
     ],
     "bottleneck": {
       "key": "cycle",
-      "text": "Cycle p95 is 3607ms against a 1000ms budget, and it is costing work: 6 check(s) skipped, 0 publish(es) rejected."
+      "text": "Cycle p95 is 4700ms against a 1000ms budget, and it is costing work: 6 check(s) skipped, 0 publish(es) rejected."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 330,
-    "headFetchP95Ms": 618,
-    "cycleP50Ms": 528,
-    "cycleP95Ms": 3607,
+    "headFetchP50Ms": 328,
+    "headFetchP95Ms": 645,
+    "cycleP50Ms": 586,
+    "cycleP95Ms": 4700,
     "stages": {
-      "headFetch": 330,
-      "blockProduction": 713,
-      "mempoolTx": 135,
-      "mempoolBlocks": 150,
-      "submit": 149
+      "headFetch": 328,
+      "blockProduction": 734,
+      "mempoolTx": 138,
+      "mempoolBlocks": 163,
+      "submit": 150
     },
-    "samples": 8924
+    "samples": 8993
   },
   "trend": {
     "daily": [
@@ -1422,7 +1423,7 @@
     "value": 0.0001987,
     "change24h": -2.14,
     "id": "xl1",
-    "notional": 0
+    "notional": 93.58
   },
   "rewards": {
     "network": "mainnet",
