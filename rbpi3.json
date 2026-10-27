@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-10-27T09:11:46.920Z",
+  "generatedAt": "2026-10-27T09:17:15.061Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -23,7 +23,7 @@
       "total": 27264,
       "today": 150,
       "week": 7225,
-      "day24h": 1175,
+      "day24h": 1173,
       "day24hComplete": true
     },
     "lastBlock": 1903254,
@@ -217,10 +217,10 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 396,
-    "retries": 16,
+    "built": 371,
+    "retries": 15,
     "lost": {
-      "txAlreadyFinalized": 16,
+      "txAlreadyFinalized": 15,
       "behindFinalizedHead": 0,
       "blockNumberMismatch": 0
     }
@@ -231,12 +231,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 356ms vs a 1000ms budget"
+        "why": "cycle p50 424ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 96,
-        "why": "16 of 396 builds rejected locally"
+        "why": "15 of 371 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -256,29 +256,29 @@
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 74,
-    "headFetchP95Ms": 368,
-    "cycleP50Ms": 356,
-    "cycleP95Ms": 1110,
+    "headFetchP50Ms": 72,
+    "headFetchP95Ms": 352,
+    "cycleP50Ms": 424,
+    "cycleP95Ms": 1536,
     "stages": {
-      "headFetch": 74,
-      "blockProduction": 546,
+      "headFetch": 72,
+      "blockProduction": 559,
       "mempoolTx": 129,
-      "mempoolBlocks": 149,
-      "submit": 145
+      "mempoolBlocks": 160,
+      "submit": 144
     },
-    "samples": 71269
+    "samples": 71375
   },
   "clock": {
     "synced": true,
     "source": "0.debian.pool.ntp.org",
     "stratum": 2,
-    "offsetMs": 6.5,
+    "offsetMs": -10.8,
     "offsetAgainst": "0.debian.pool.ntp.org",
-    "jitterMs": 4.9,
+    "jitterMs": 11.8,
     "rootDistanceMs": 4.5,
     "pollIntervalSeconds": 2048,
-    "checkedAt": "2026-10-27T09:01:24Z"
+    "checkedAt": "2026-10-27T09:11:44Z"
   },
   "heights": {
     "columns": [
@@ -290,30 +290,6 @@
       "timePayloadMs"
     ],
     "rows": [
-      [
-        1902898,
-        1793088865703,
-        0,
-        0,
-        0,
-        286
-      ],
-      [
-        1902899,
-        1793088871780,
-        0,
-        0,
-        0,
-        306
-      ],
-      [
-        1902900,
-        1793088880751,
-        0,
-        0,
-        0,
-        282
-      ],
       [
         1902901,
         1793088890196,
@@ -3169,6 +3145,30 @@
         0,
         0,
         259
+      ],
+      [
+        1903258,
+        1793092280697,
+        0,
+        0,
+        0,
+        239
+      ],
+      [
+        1903259,
+        1793092289472,
+        0,
+        0,
+        0,
+        247
+      ],
+      [
+        1903260,
+        1793092298462,
+        0,
+        0,
+        0,
+        236
       ]
     ]
   },
@@ -3276,8 +3276,8 @@
       },
       {
         "day": "2026-10-27",
-        "blocks": 446,
-        "earned": 21185.0565
+        "blocks": 448,
+        "earned": 21280.0568
       }
     ],
     "retainDays": 30
@@ -4457,9 +4457,9 @@
       {
         "t": 1793091600000,
         "observed": true,
-        "chainBlocks": 63,
-        "wins": 6,
-        "sharePercent": 9.5
+        "chainBlocks": 73,
+        "wins": 8,
+        "sharePercent": 11
       }
     ],
     "observedHours": 169,
@@ -4577,10 +4577,10 @@
   },
   "price": {
     "currency": "usd",
-    "value": 0.00016663,
-    "change24h": -0.05,
+    "value": 0.00016684,
+    "change24h": -0.03,
     "id": "xl1",
-    "notional": 214.62
+    "notional": 214.89
   },
   "rewards": {
     "network": "mainnet",
