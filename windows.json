@@ -1,15 +1,15 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-10-30T14:44:16.997Z",
+  "generatedAt": "2026-10-30T14:49:17.007Z",
   "status": "degraded",
   "problemCount": 1,
   "chain": {
     "network": "sequence",
     "networkName": "Sequence",
     "chainId": "4b43a753c8024c0e5000e8ac948ac0063ac624bc",
-    "currentBlock": 724261,
-    "finalizedBlock": 724261,
+    "currentBlock": 724268,
+    "finalizedBlock": 724268,
     "finalizationLag": 0,
     "explorerUrl": "https://explore.xyo.network/xl1/sequence"
   },
@@ -20,23 +20,23 @@
     "producers": 8,
     "sharePercent": 16.49,
     "blocks": {
-      "total": 24240,
-      "today": 220,
-      "week": 4238,
-      "day24h": 646,
+      "total": 24242,
+      "today": 222,
+      "week": 4240,
+      "day24h": 647,
       "day24hComplete": true
     },
-    "lastBlock": 724261,
-    "lastBlockUrl": "https://explore.xyo.network/xl1/sequence/block/number/724261",
-    "blocksSinceLast": 0,
-    "rewardXl1": "1,212,106.8599",
+    "lastBlock": 724267,
+    "lastBlockUrl": "https://explore.xyo.network/xl1/sequence/block/number/724267",
+    "blocksSinceLast": 1,
+    "rewardXl1": "1,212,206.8600",
     "rewardAddressUrl": "https://explore.xyo.network/xl1/sequence/address/2152e6aec996742fb6e52ae1aad87bd44f2ccc91"
   },
   "network": {
     "observed": {
-      "blocks": 147009,
+      "blocks": 147016,
       "fromBlock": 577263,
-      "toBlock": 724261,
+      "toBlock": 724268,
       "since": "2026-08-30T19:02:45.136Z",
       "behind": 0,
       "daysStored": 35,
@@ -45,7 +45,7 @@
     },
     "concentration": {
       "producers": 8,
-      "blocks": 147009,
+      "blocks": 147016,
       "leaderShare": 17.55,
       "top3Share": 51.29,
       "nakamoto": 3,
@@ -53,7 +53,7 @@
       "evenShare": 12.5
     },
     "blockTime": {
-      "samples": 141464,
+      "samples": 141471,
       "meanSeconds": 34.75,
       "medianSeconds": 30,
       "p90Seconds": 60,
@@ -92,7 +92,7 @@
       ],
       "buckets": [
         2465,
-        28190,
+        28192,
         14170,
         8587,
         7282,
@@ -100,9 +100,9 @@
         5793,
         5495,
         5152,
-        5322,
-        7534,
-        9642,
+        5323,
+        7535,
+        9645,
         35046,
         170,
         36,
@@ -129,7 +129,7 @@
       {
         "address": "ca08120874f071739d932b24da41cc13299123b3",
         "label": "LewSales-pi3",
-        "blocks": 25803,
+        "blocks": 25805,
         "sharePercent": 17.55,
         "rank": 1,
         "isSelf": false,
@@ -154,7 +154,7 @@
       {
         "address": "2152e6aec996742fb6e52ae1aad87bd44f2ccc91",
         "label": "LewSales-2",
-        "blocks": 24240,
+        "blocks": 24242,
         "sharePercent": 16.49,
         "rank": 4,
         "isSelf": true,
@@ -162,7 +162,7 @@
       },
       {
         "address": "7ac8355c0ed1b6404da1ce7fe87a23394bab8056",
-        "blocks": 23544,
+        "blocks": 23547,
         "sharePercent": 16.02,
         "rank": 5,
         "isSelf": false,
@@ -197,10 +197,10 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 116,
-    "retries": 10,
+    "built": 115,
+    "retries": 9,
     "lost": {
-      "txAlreadyFinalized": 10,
+      "txAlreadyFinalized": 9,
       "behindFinalizedHead": 0,
       "blockNumberMismatch": 0
     }
@@ -211,12 +211,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 323ms vs a 1000ms budget"
+        "why": "cycle p50 305ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 91,
-        "why": "10 of 116 builds rejected locally"
+        "value": 92,
+        "why": "9 of 115 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -236,31 +236,31 @@
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 140,
+    "headFetchP50Ms": 134,
     "headFetchP95Ms": 331,
-    "cycleP50Ms": 323,
-    "cycleP95Ms": 920,
+    "cycleP50Ms": 305,
+    "cycleP95Ms": 882,
     "stages": {
-      "headFetch": 140,
-      "blockProduction": 161,
-      "mempoolTx": 158,
+      "headFetch": 134,
+      "blockProduction": 162,
+      "mempoolTx": 159,
       "mempoolBlocks": 164,
       "submit": 173,
-      "timePayload": 345,
+      "timePayload": 335,
       "rewardTransfers": 0
     },
-    "samples": 126839
+    "samples": 126939
   },
   "clock": {
     "synced": true,
     "source": "time.windows.com",
     "stratum": 5,
-    "offsetMs": 34.4,
+    "offsetMs": 34.1,
     "offsetAgainst": "time.windows.com",
     "rootDispersionMs": 253,
     "pollIntervalSeconds": 32768,
     "lastSyncAt": "2026-10-30T10:54:25Z",
-    "checkedAt": "2026-10-30T14:37:40Z"
+    "checkedAt": "2026-10-30T14:47:40Z"
   },
   "localProducers": [
     {
@@ -7900,8 +7900,8 @@
     "daily": [
       {
         "day": "2026-09-30",
-        "blocks": 108,
-        "earned": 5350.0077
+        "blocks": 106,
+        "earned": 5250.0076
       },
       {
         "day": "2026-10-01",
@@ -8050,8 +8050,8 @@
       },
       {
         "day": "2026-10-30",
-        "blocks": 396,
-        "earned": 19800.0325
+        "blocks": 399,
+        "earned": 19950.0327
       }
     ],
     "retainDays": 30
@@ -9231,9 +9231,9 @@
       {
         "t": 1793368800000,
         "observed": true,
-        "chainBlocks": 78,
-        "wins": 19,
-        "sharePercent": 24.4
+        "chainBlocks": 86,
+        "wins": 22,
+        "sharePercent": 25.6
       }
     ],
     "observedHours": 169,
@@ -9250,7 +9250,7 @@
         "address": "2152e6aec996742fb6e52ae1aad87bd44f2ccc91",
         "label": "LewSales-2",
         "url": "https://explore.xyo.network/xl1/sequence/address/2152e6aec996742fb6e52ae1aad87bd44f2ccc91",
-        "blocks": 4238,
+        "blocks": 4240,
         "previousBlocks": 4895,
         "sharePercent": 25.15,
         "previousSharePercent": 24.5,
@@ -9260,7 +9260,7 @@
         "address": "ca08120874f071739d932b24da41cc13299123b3",
         "label": "LewSales-pi3",
         "url": "https://explore.xyo.network/xl1/sequence/address/ca08120874f071739d932b24da41cc13299123b3",
-        "blocks": 4175,
+        "blocks": 4177,
         "previousBlocks": 4921,
         "sharePercent": 24.78,
         "previousSharePercent": 24.63,
@@ -9273,25 +9273,25 @@
         "previousBlocks": 3388,
         "sharePercent": 16.85,
         "previousSharePercent": 16.95,
-        "deltaPercent": -0.1
+        "deltaPercent": -0.11
       },
       {
         "address": "7ac8355c0ed1b6404da1ce7fe87a23394bab8056",
         "url": "https://explore.xyo.network/xl1/sequence/address/7ac8355c0ed1b6404da1ce7fe87a23394bab8056",
-        "blocks": 2721,
+        "blocks": 2724,
         "previousBlocks": 3262,
-        "sharePercent": 16.15,
+        "sharePercent": 16.16,
         "previousSharePercent": 16.32,
-        "deltaPercent": -0.18
+        "deltaPercent": -0.16
       },
       {
         "address": "81b835c16e6da6152b4d9ebd7e55162f762767a1",
         "url": "https://explore.xyo.network/xl1/sequence/address/81b835c16e6da6152b4d9ebd7e55162f762767a1",
         "blocks": 2876,
         "previousBlocks": 3517,
-        "sharePercent": 17.07,
+        "sharePercent": 17.06,
         "previousSharePercent": 17.6,
-        "deltaPercent": -0.53
+        "deltaPercent": -0.54
       }
     ],
     "seenToday": 5,
@@ -9322,8 +9322,8 @@
   "price": {
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
-    "value": 0.00015929,
-    "change24h": -3.32,
+    "value": 0.00015965,
+    "change24h": -3.77,
     "id": "xl1"
   },
   "rewards": {
@@ -9331,19 +9331,19 @@
     "perBlock": {
       "xl1": "50",
       "source": "recorded",
-      "block": 724261,
+      "block": 724267,
       "ofTotalXl1": "500"
     },
     "nextStep": {
       "atBlock": 1000000,
-      "blocksAway": 275739,
+      "blocksAway": 275732,
       "xl1": "47.5",
       "basis": "protocol schedule (xl1-cli 5.6.2); Sequence history has not always followed it",
       "status": "projection"
     },
     "recorded": {
-      "xl1": "677950",
-      "blocks": 13559,
+      "xl1": "678050",
+      "blocks": 13561,
       "since": 669331
     },
     "inScanRecorded": {
@@ -9356,10 +9356,10 @@
       "discrepancy": "history found 10681 own blocks where the live scan counted 10683"
     },
     "fees": {
-      "xl1": "1.0988815"
+      "xl1": "1.0990293"
     },
     "earned": {
-      "xl1": "1212000",
+      "xl1": "1212100",
       "scope": "since scanning began",
       "from": 577263,
       "recordedShare": 100
@@ -9378,15 +9378,15 @@
       }
     },
     "lifetime": {
-      "blocks": 24240,
-      "liveCounterBlocks": 24242,
-      "earnedXl1": "1212000",
-      "recordedXl1": "1212000",
-      "feesXl1": "1.7855456",
+      "blocks": 24242,
+      "liveCounterBlocks": 24244,
+      "earnedXl1": "1212100",
+      "recordedXl1": "1212100",
+      "feesXl1": "1.7856934",
       "unrecordedBlocks": 0,
       "firstBlock": 580121,
       "basis": "chain records from block 1",
-      "attributedXl1": "1212000"
+      "attributedXl1": "1212100"
     },
     "evidence": {
       "blockFile": "https://blocks.sequence.xyo.space/block/number/{n}.json",
