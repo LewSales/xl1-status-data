@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-11-02T07:54:58.130Z",
+  "generatedAt": "2026-11-02T08:00:45.614Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -23,7 +23,7 @@
       "total": 34175,
       "today": 41,
       "week": 7061,
-      "day24h": 1119,
+      "day24h": 1109,
       "day24hComplete": true
     },
     "lastBlock": 1961331,
@@ -217,26 +217,26 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 402,
-    "retries": 21,
+    "built": 364,
+    "retries": 18,
     "lost": {
-      "txAlreadyFinalized": 21,
+      "txAlreadyFinalized": 18,
       "behindFinalizedHead": 0,
       "blockNumberMismatch": 0
     }
   },
   "operations": {
-    "score": 97,
+    "score": 93,
     "components": [
       {
         "label": "Latency",
-        "value": 94,
-        "why": "cycle p50 587ms vs a 1000ms budget"
+        "value": 77,
+        "why": "cycle p50 848ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 95,
-        "why": "21 of 402 builds rejected locally"
+        "why": "18 of 364 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -256,18 +256,18 @@
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 91,
-    "headFetchP95Ms": 285,
-    "cycleP50Ms": 587,
-    "cycleP95Ms": 2818,
+    "headFetchP50Ms": 106,
+    "headFetchP95Ms": 335,
+    "cycleP50Ms": 848,
+    "cycleP95Ms": 4182,
     "stages": {
-      "headFetch": 91,
-      "blockProduction": 489,
+      "headFetch": 106,
+      "blockProduction": 492,
       "mempoolTx": 120,
-      "mempoolBlocks": 187,
-      "submit": 138
+      "mempoolBlocks": 538,
+      "submit": 139
     },
-    "samples": 155536
+    "samples": 155630
   },
   "clock": {
     "synced": true,
@@ -4493,7 +4493,7 @@
       }
     ],
     "observedHours": 168,
-    "unobservedHours": 1,
+    "unobservedHours": 0,
     "producingHours": 168,
     "missedHours": 0,
     "producingPercent": 100,
