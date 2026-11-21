@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-11-20T23:59:17.721Z",
+  "generatedAt": "2026-11-21T00:04:17.713Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
@@ -23,7 +23,7 @@
       "total": 39767,
       "today": 721,
       "week": 5096,
-      "day24h": 1145,
+      "day24h": 1135,
       "day24hComplete": true
     },
     "lastBlock": 789568,
@@ -197,7 +197,7 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 452,
+    "built": 457,
     "retries": 78,
     "lost": {
       "txAlreadyFinalized": 78,
@@ -206,17 +206,17 @@
     }
   },
   "operations": {
-    "score": 82,
+    "score": 91,
     "components": [
       {
         "label": "Latency",
-        "value": 46,
-        "why": "cycle p50 1304ms vs a 1000ms budget"
+        "value": 83,
+        "why": "cycle p50 761ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 81,
-        "why": "86 of 452 builds rejected locally"
+        "why": "86 of 457 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -236,20 +236,20 @@
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 96,
-    "headFetchP95Ms": 276,
-    "cycleP50Ms": 1304,
-    "cycleP95Ms": 8651,
+    "headFetchP50Ms": 103,
+    "headFetchP95Ms": 282,
+    "cycleP50Ms": 761,
+    "cycleP95Ms": 7968,
     "stages": {
-      "headFetch": 96,
-      "blockProduction": 393,
-      "mempoolTx": 140,
-      "mempoolBlocks": 887,
-      "submit": 144,
-      "timePayload": 197,
+      "headFetch": 103,
+      "blockProduction": 400,
+      "mempoolTx": 142,
+      "mempoolBlocks": 498,
+      "submit": 145,
+      "timePayload": 198,
       "rewardTransfers": 0
     },
-    "samples": 2762
+    "samples": 2855
   },
   "clock": {
     "synced": true,
@@ -7452,8 +7452,8 @@
     "daily": [
       {
         "day": "2026-10-22",
-        "blocks": 685,
-        "earned": 34250.0527
+        "blocks": 682,
+        "earned": 34100.0524
       },
       {
         "day": "2026-10-23",
@@ -7599,6 +7599,11 @@
         "day": "2026-11-20",
         "blocks": 1145,
         "earned": 57250.5283
+      },
+      {
+        "day": "2026-11-21",
+        "blocks": 0,
+        "earned": 0
       }
     ],
     "retainDays": 30
@@ -7606,13 +7611,6 @@
   "continuity": {
     "windowHours": 168,
     "hours": [
-      {
-        "t": 1794614400000,
-        "observed": true,
-        "chainBlocks": 325,
-        "wins": 69,
-        "sharePercent": 21.2
-      },
       {
         "t": 1794618000000,
         "observed": true,
@@ -8733,10 +8731,14 @@
         "chainBlocks": 67,
         "wins": 17,
         "sharePercent": 25.4
+      },
+      {
+        "t": 1795219200000,
+        "observed": false
       }
     ],
     "observedHours": 152,
-    "unobservedHours": 16,
+    "unobservedHours": 17,
     "producingHours": 152,
     "missedHours": 0,
     "producingPercent": 100,
@@ -8803,7 +8805,7 @@
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
     "value": 0.00012026,
-    "change24h": -3.4,
+    "change24h": -3.49,
     "id": "xl1"
   },
   "rewards": {
