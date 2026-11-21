@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-11-21T01:54:21.328Z",
-  "status": "ok",
-  "problemCount": 0,
+  "generatedAt": "2026-11-21T02:03:36.437Z",
+  "status": "degraded",
+  "problemCount": 1,
   "chain": {
     "network": "sequence",
     "networkName": "Sequence",
@@ -23,7 +23,7 @@
       "total": 39768,
       "today": 722,
       "week": 5097,
-      "day24h": 1051,
+      "day24h": 1044,
       "day24hComplete": true
     },
     "lastBlock": 789575,
@@ -197,26 +197,26 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 486,
-    "retries": 91,
+    "built": 483,
+    "retries": 93,
     "lost": {
-      "txAlreadyFinalized": 91,
-      "behindFinalizedHead": 16,
+      "txAlreadyFinalized": 93,
+      "behindFinalizedHead": 20,
       "blockNumberMismatch": 0
     }
   },
   "operations": {
-    "score": 91,
+    "score": 92,
     "components": [
       {
         "label": "Latency",
-        "value": 87,
-        "why": "cycle p50 701ms vs a 1000ms budget"
+        "value": 89,
+        "why": "cycle p50 669ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 78,
-        "why": "107 of 486 builds rejected locally"
+        "value": 77,
+        "why": "113 of 483 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -231,36 +231,36 @@
     ],
     "bottleneck": {
       "key": "mempool",
-      "text": "Stale mempool data caused 85% of rejected candidates."
+      "text": "Stale mempool data caused 82% of rejected candidates."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 139,
+    "headFetchP50Ms": 135,
     "headFetchP95Ms": 316,
-    "cycleP50Ms": 701,
-    "cycleP95Ms": 5829,
+    "cycleP50Ms": 669,
+    "cycleP95Ms": 5609,
     "stages": {
-      "headFetch": 139,
-      "blockProduction": 567,
-      "mempoolTx": 231,
-      "mempoolBlocks": 482,
-      "submit": 175,
-      "timePayload": 238,
+      "headFetch": 135,
+      "blockProduction": 570,
+      "mempoolTx": 226,
+      "mempoolBlocks": 379,
+      "submit": 174,
+      "timePayload": 239,
       "rewardTransfers": 0
     },
-    "samples": 4667
+    "samples": 4734
   },
   "clock": {
     "synced": true,
     "source": "time.windows.com",
     "stratum": 5,
-    "offsetMs": 23.7,
+    "offsetMs": 39.8,
     "offsetAgainst": "time.windows.com",
     "rootDispersionMs": 271,
     "pollIntervalSeconds": 8192,
     "lastSyncAt": "2026-11-20T23:09:49Z",
-    "checkedAt": "2026-11-21T01:43:50Z"
+    "checkedAt": "2026-11-21T01:54:41Z"
   },
   "localProducers": [
     {
@@ -6236,8 +6236,8 @@
     "daily": [
       {
         "day": "2026-10-22",
-        "blocks": 639,
-        "earned": 31950.0492
+        "blocks": 631,
+        "earned": 31550.0487
       },
       {
         "day": "2026-10-23",
@@ -6395,13 +6395,6 @@
   "continuity": {
     "windowHours": 168,
     "hours": [
-      {
-        "t": 1794621600000,
-        "observed": true,
-        "chainBlocks": 341,
-        "wins": 70,
-        "sharePercent": 20.5
-      },
       {
         "t": 1794625200000,
         "observed": true,
@@ -7519,9 +7512,13 @@
       {
         "t": 1795222800000,
         "observed": true,
-        "chainBlocks": 4,
+        "chainBlocks": 5,
         "wins": 0,
         "sharePercent": 0
+      },
+      {
+        "t": 1795226400000,
+        "observed": false
       }
     ],
     "observedHours": 152,
@@ -7592,8 +7589,8 @@
   "price": {
     "marketNote": "These are sequence balances — the test network — so they are not the traded asset. The price above is real XL1; this balance is not.",
     "currency": "usd",
-    "value": 0.00012025,
-    "change24h": -4.64,
+    "value": 0.00012034,
+    "change24h": -4.12,
     "id": "xl1"
   },
   "rewards": {
