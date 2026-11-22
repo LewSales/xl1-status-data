@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-11-22T21:34:17.188Z",
+  "generatedAt": "2026-11-22T21:39:17.082Z",
   "status": "degraded",
   "problemCount": 1,
   "chain": {
@@ -23,7 +23,7 @@
       "total": 41784,
       "today": 866,
       "week": 4831,
-      "day24h": 1455,
+      "day24h": 1447,
       "day24hComplete": true
     },
     "lastBlock": 796917,
@@ -197,11 +197,11 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 451,
-    "retries": 94,
+    "built": 450,
+    "retries": 96,
     "lost": {
-      "txAlreadyFinalized": 93,
-      "behindFinalizedHead": 4,
+      "txAlreadyFinalized": 95,
+      "behindFinalizedHead": 3,
       "blockNumberMismatch": 0
     }
   },
@@ -211,12 +211,12 @@
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 253ms vs a 1000ms budget"
+        "why": "cycle p50 288ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
         "value": 78,
-        "why": "97 of 451 builds rejected locally"
+        "why": "98 of 450 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -231,36 +231,36 @@
     ],
     "bottleneck": {
       "key": "mempool",
-      "text": "Stale mempool data caused 96% of rejected candidates."
+      "text": "Stale mempool data caused 97% of rejected candidates."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 0,
-    "headFetchP95Ms": 164,
-    "cycleP50Ms": 253,
-    "cycleP95Ms": 453,
+    "headFetchP50Ms": 70,
+    "headFetchP95Ms": 293,
+    "cycleP50Ms": 288,
+    "cycleP95Ms": 1570,
     "stages": {
-      "headFetch": 0,
-      "blockProduction": 251,
+      "headFetch": 70,
+      "blockProduction": 253,
       "mempoolTx": 119,
-      "mempoolBlocks": 132,
-      "submit": 139,
-      "timePayload": 69,
+      "mempoolBlocks": 246,
+      "submit": 140,
+      "timePayload": 70,
       "rewardTransfers": 0
     },
-    "samples": 32966
+    "samples": 33436
   },
   "clock": {
     "synced": true,
     "source": "time.windows.com",
     "stratum": 5,
-    "offsetMs": 13.1,
+    "offsetMs": 21.5,
     "offsetAgainst": "time.windows.com",
     "rootDispersionMs": 259,
     "pollIntervalSeconds": 32768,
     "lastSyncAt": "2026-11-22T20:40:45Z",
-    "checkedAt": "2026-11-22T21:27:39Z"
+    "checkedAt": "2026-11-22T21:37:40Z"
   },
   "localProducers": [
     {
@@ -6156,8 +6156,8 @@
     "daily": [
       {
         "day": "2026-10-23",
-        "blocks": 68,
-        "earned": 3400.0057
+        "blocks": 67,
+        "earned": 3350.0056
       },
       {
         "day": "2026-10-24",
