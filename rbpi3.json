@@ -1,15 +1,15 @@
 {
   "schema": 1,
   "label": "rbpi3",
-  "generatedAt": "2026-11-22T15:38:15.669Z",
+  "generatedAt": "2026-11-22T15:44:01.939Z",
   "status": "ok",
   "problemCount": 0,
   "chain": {
     "network": "mainnet",
     "networkName": "Mainnet",
     "chainId": "319e667ced10452a117472811130444ded357f26",
-    "currentBlock": 2165571,
-    "finalizedBlock": 2165571,
+    "currentBlock": 2165615,
+    "finalizedBlock": 2165615,
     "finalizationLag": 0,
     "explorerUrl": "https://explore.xyo.network/xl1/mainnet"
   },
@@ -23,20 +23,20 @@
       "total": 59588,
       "today": 370,
       "week": 8603,
-      "day24h": 1560,
+      "day24h": 1554,
       "day24hComplete": true
     },
     "lastBlock": 2165571,
     "lastBlockUrl": "https://explore.xyo.network/xl1/mainnet/block/number/2165571",
-    "blocksSinceLast": 0,
+    "blocksSinceLast": 44,
     "rewardXl1": "2,673,780.4034",
     "rewardAddressUrl": "https://explore.xyo.network/xl1/mainnet/address/ca08120874f071739d932b24da41cc13299123b3"
   },
   "network": {
     "observed": {
-      "blocks": 444353,
+      "blocks": 444397,
       "fromBlock": 1721227,
-      "toBlock": 2165571,
+      "toBlock": 2165615,
       "since": "2026-10-07T01:53:24.884Z",
       "behind": 0,
       "daysStored": 35,
@@ -45,7 +45,7 @@
     },
     "concentration": {
       "producers": 11,
-      "blocks": 444353,
+      "blocks": 444397,
       "leaderShare": 13.41,
       "top3Share": 36.08,
       "nakamoto": 5,
@@ -53,7 +53,7 @@
       "evenShare": 9.09
     },
     "blockTime": {
-      "samples": 444344,
+      "samples": 444388,
       "meanSeconds": 9.06,
       "medianSeconds": 5,
       "p90Seconds": 10,
@@ -91,11 +91,11 @@
         900
       ],
       "buckets": [
-        12646,
-        317651,
-        98368,
+        12658,
+        317672,
+        98378,
         9967,
-        4186,
+        4187,
         860,
         401,
         97,
@@ -138,7 +138,7 @@
       {
         "address": "2152e6aec996742fb6e52ae1aad87bd44f2ccc91",
         "label": "LewSales-2",
-        "blocks": 52906,
+        "blocks": 52912,
         "sharePercent": 11.91,
         "rank": 2,
         "isSelf": false,
@@ -147,15 +147,15 @@
       {
         "address": "fb4c535221f91c1811bd42f70b6ec305aa658551",
         "label": "FreeCryptoA",
-        "blocks": 47834,
-        "sharePercent": 10.76,
+        "blocks": 47845,
+        "sharePercent": 10.77,
         "rank": 3,
         "isSelf": false,
         "url": "https://explore.xyo.network/xl1/mainnet/address/fb4c535221f91c1811bd42f70b6ec305aa658551"
       },
       {
         "address": "c3d1a1c9781a41e69c0d0892ac6541f50151979f",
-        "blocks": 43354,
+        "blocks": 43364,
         "sharePercent": 9.76,
         "rank": 4,
         "isSelf": false,
@@ -164,8 +164,8 @@
       {
         "address": "a9304753eade52dd22b1a6fc519b571a4dc2653e",
         "label": "LewSales-3",
-        "blocks": 40813,
-        "sharePercent": 9.18,
+        "blocks": 40821,
+        "sharePercent": 9.19,
         "rank": 5,
         "isSelf": false,
         "url": "https://explore.xyo.network/xl1/mainnet/address/a9304753eade52dd22b1a6fc519b571a4dc2653e"
@@ -173,7 +173,7 @@
       {
         "address": "a6567633ac83a7017f3a2ef20fbbed890a2adae9",
         "label": "Jim-pi4",
-        "blocks": 39243,
+        "blocks": 39247,
         "sharePercent": 8.83,
         "rank": 6,
         "isSelf": false,
@@ -206,7 +206,7 @@
       },
       {
         "address": "cd8f4d09564ae6a9c90f05c8bc31197c651f5f18",
-        "blocks": 38409,
+        "blocks": 38414,
         "sharePercent": 8.64,
         "rank": 10,
         "isSelf": false,
@@ -225,26 +225,26 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 459,
-    "retries": 65,
+    "built": 457,
+    "retries": 68,
     "lost": {
-      "txAlreadyFinalized": 64,
+      "txAlreadyFinalized": 67,
       "behindFinalizedHead": 0,
       "blockNumberMismatch": 0
     }
   },
   "operations": {
-    "score": 97,
+    "score": 96,
     "components": [
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 128ms vs a 1000ms budget"
+        "why": "cycle p50 168ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 86,
-        "why": "64 of 459 builds rejected locally"
+        "value": 85,
+        "why": "67 of 457 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -265,17 +265,17 @@
   "latency": {
     "headFetchMinMs": 0,
     "headFetchP50Ms": 1,
-    "headFetchP95Ms": 125,
-    "cycleP50Ms": 128,
-    "cycleP95Ms": 752,
+    "headFetchP95Ms": 150,
+    "cycleP50Ms": 168,
+    "cycleP95Ms": 653,
     "stages": {
       "headFetch": 1,
-      "blockProduction": 176,
-      "mempoolTx": 118,
-      "mempoolBlocks": 146,
+      "blockProduction": 180,
+      "mempoolTx": 117,
+      "mempoolBlocks": 143,
       "submit": 135
     },
-    "samples": 96026
+    "samples": 96717
   },
   "clock": {
     "synced": true,
@@ -286,7 +286,7 @@
     "jitterMs": 14.3,
     "rootDistanceMs": 73.2,
     "pollIntervalSeconds": 2048,
-    "checkedAt": "2026-11-22T15:31:38Z"
+    "checkedAt": "2026-11-22T15:42:13Z"
   },
   "heights": {
     "columns": [
@@ -298,374 +298,6 @@
       "timePayloadMs"
     ],
     "rows": [
-      [
-        2165211,
-        1795358950067,
-        0,
-        0,
-        0,
-        133
-      ],
-      [
-        2165212,
-        1795358955379,
-        0,
-        0,
-        0,
-        146
-      ],
-      [
-        2165213,
-        1795358961333,
-        0,
-        0,
-        0,
-        266
-      ],
-      [
-        2165214,
-        1795358965541,
-        0,
-        0,
-        0,
-        109
-      ],
-      [
-        2165215,
-        1795358974748,
-        0,
-        0,
-        0,
-        273
-      ],
-      [
-        2165216,
-        1795358994818,
-        0,
-        0,
-        0,
-        268
-      ],
-      [
-        2165217,
-        1795358999165,
-        0,
-        0,
-        0,
-        211
-      ],
-      [
-        2165218,
-        1795359013219,
-        0,
-        0,
-        0,
-        237
-      ],
-      [
-        2165219,
-        1795359018318,
-        0,
-        0,
-        0,
-        117
-      ],
-      [
-        2165220,
-        1795359022649,
-        0,
-        0,
-        0,
-        121
-      ],
-      [
-        2165221,
-        1795359028423,
-        0,
-        0,
-        0,
-        232
-      ],
-      [
-        2165222,
-        1795359035924,
-        0,
-        0,
-        0,
-        228
-      ],
-      [
-        2165223,
-        1795359045202,
-        0,
-        0,
-        0,
-        205
-      ],
-      [
-        2165224,
-        1795359051024,
-        0,
-        0,
-        0,
-        216
-      ],
-      [
-        2165225,
-        1795359055444,
-        0,
-        0,
-        0,
-        125
-      ],
-      [
-        2165226,
-        1795359065602,
-        0,
-        0,
-        0,
-        208
-      ],
-      [
-        2165227,
-        1795359069857,
-        0,
-        0,
-        0,
-        138
-      ],
-      [
-        2165228,
-        1795359077292,
-        0,
-        0,
-        0,
-        253
-      ],
-      [
-        2165229,
-        1795359082208,
-        1,
-        1,
-        1,
-        110
-      ],
-      [
-        2165230,
-        1795359095035,
-        0,
-        0,
-        0,
-        424
-      ],
-      [
-        2165231,
-        1795359113858,
-        0,
-        0,
-        0,
-        182
-      ],
-      [
-        2165232,
-        1795359119361,
-        0,
-        0,
-        0,
-        228
-      ],
-      [
-        2165233,
-        1795359125153,
-        0,
-        0,
-        0,
-        208
-      ],
-      [
-        2165234,
-        1795359134929,
-        0,
-        0,
-        0,
-        301
-      ],
-      [
-        2165235,
-        1795359139828,
-        0,
-        0,
-        0,
-        133
-      ],
-      [
-        2165236,
-        1795359144835,
-        0,
-        0,
-        0,
-        153
-      ],
-      [
-        2165237,
-        1795359149374,
-        1,
-        1,
-        1,
-        141
-      ],
-      [
-        2165238,
-        1795359165163,
-        0,
-        0,
-        0,
-        337
-      ],
-      [
-        2165239,
-        1795359169362,
-        1,
-        1,
-        1,
-        116
-      ],
-      [
-        2165240,
-        1795359185327,
-        0,
-        0,
-        0,
-        338
-      ],
-      [
-        2165241,
-        1795359194990,
-        0,
-        0,
-        0,
-        255
-      ],
-      [
-        2165242,
-        1795359200620,
-        0,
-        0,
-        0,
-        239
-      ],
-      [
-        2165243,
-        1795359204910,
-        0,
-        0,
-        0,
-        128
-      ],
-      [
-        2165244,
-        1795359214756,
-        0,
-        0,
-        0,
-        241
-      ],
-      [
-        2165245,
-        1795359219424,
-        1,
-        1,
-        1,
-        120
-      ],
-      [
-        2165246,
-        1795359224932,
-        0,
-        0,
-        0,
-        197
-      ],
-      [
-        2165247,
-        1795359235293,
-        0,
-        0,
-        0,
-        237
-      ],
-      [
-        2165248,
-        1795359244996,
-        0,
-        0,
-        0,
-        222
-      ],
-      [
-        2165249,
-        1795359255063,
-        0,
-        0,
-        0,
-        243
-      ],
-      [
-        2165250,
-        1795359259481,
-        0,
-        0,
-        0,
-        133
-      ],
-      [
-        2165251,
-        1795359264006,
-        1,
-        1,
-        1,
-        151
-      ],
-      [
-        2165252,
-        1795359274686,
-        0,
-        0,
-        0,
-        286
-      ],
-      [
-        2165253,
-        1795359284811,
-        0,
-        0,
-        0,
-        344
-      ],
-      [
-        2165254,
-        1795359295360,
-        0,
-        0,
-        0,
-        215
-      ],
-      [
-        2165255,
-        1795359304821,
-        0,
-        0,
-        0,
-        363
-      ],
-      [
-        2165256,
-        1795359316694,
-        0,
-        0,
-        0,
-        211
-      ],
       [
         2165257,
         1795359321819,
@@ -3177,6 +2809,374 @@
         0,
         0,
         294
+      ],
+      [
+        2165571,
+        1795361874894,
+        0,
+        0,
+        0,
+        232
+      ],
+      [
+        2165572,
+        1795361879378,
+        1,
+        1,
+        1,
+        168
+      ],
+      [
+        2165573,
+        1795361894984,
+        0,
+        0,
+        0,
+        295
+      ],
+      [
+        2165574,
+        1795361900599,
+        0,
+        0,
+        0,
+        248
+      ],
+      [
+        2165575,
+        1795361905945,
+        0,
+        0,
+        0,
+        240
+      ],
+      [
+        2165576,
+        1795361915901,
+        0,
+        0,
+        0,
+        301
+      ],
+      [
+        2165577,
+        1795361925047,
+        0,
+        0,
+        0,
+        308
+      ],
+      [
+        2165578,
+        1795361934994,
+        0,
+        0,
+        0,
+        242
+      ],
+      [
+        2165579,
+        1795361944943,
+        0,
+        0,
+        0,
+        227
+      ],
+      [
+        2165580,
+        1795361955116,
+        0,
+        0,
+        0,
+        206
+      ],
+      [
+        2165581,
+        1795361959709,
+        0,
+        0,
+        0,
+        174
+      ],
+      [
+        2165582,
+        1795361964353,
+        1,
+        1,
+        1,
+        117
+      ],
+      [
+        2165583,
+        1795361975087,
+        0,
+        0,
+        0,
+        217
+      ],
+      [
+        2165584,
+        1795361995240,
+        0,
+        0,
+        0,
+        291
+      ],
+      [
+        2165585,
+        1795361999316,
+        1,
+        1,
+        1,
+        129
+      ],
+      [
+        2165586,
+        1795362014887,
+        0,
+        0,
+        0,
+        251
+      ],
+      [
+        2165587,
+        1795362020221,
+        0,
+        0,
+        0,
+        261
+      ],
+      [
+        2165588,
+        1795362025198,
+        0,
+        0,
+        0,
+        117
+      ],
+      [
+        2165589,
+        1795362030127,
+        0,
+        0,
+        0,
+        119
+      ],
+      [
+        2165590,
+        1795362034996,
+        0,
+        0,
+        0,
+        110
+      ],
+      [
+        2165591,
+        1795362044983,
+        0,
+        0,
+        0,
+        331
+      ],
+      [
+        2165592,
+        1795362049723,
+        0,
+        0,
+        0,
+        122
+      ],
+      [
+        2165593,
+        1795362054674,
+        0,
+        0,
+        0,
+        137
+      ],
+      [
+        2165594,
+        1795362059245,
+        1,
+        1,
+        1,
+        147
+      ],
+      [
+        2165595,
+        1795362069924,
+        0,
+        0,
+        0,
+        216
+      ],
+      [
+        2165596,
+        1795362074850,
+        0,
+        0,
+        0,
+        136
+      ],
+      [
+        2165597,
+        1795362079069,
+        0,
+        0,
+        0,
+        140
+      ],
+      [
+        2165598,
+        1795362084670,
+        0,
+        0,
+        0,
+        210
+      ],
+      [
+        2165599,
+        1795362088739,
+        0,
+        0,
+        0,
+        114
+      ],
+      [
+        2165600,
+        1795362094930,
+        0,
+        0,
+        0,
+        251
+      ],
+      [
+        2165601,
+        1795362102419,
+        0,
+        0,
+        0,
+        339
+      ],
+      [
+        2165602,
+        1795362107029,
+        1,
+        1,
+        1,
+        111
+      ],
+      [
+        2165603,
+        1795362115128,
+        0,
+        0,
+        0,
+        228
+      ],
+      [
+        2165604,
+        1795362118869,
+        0,
+        0,
+        0,
+        131
+      ],
+      [
+        2165605,
+        1795362123932,
+        1,
+        1,
+        1,
+        127
+      ],
+      [
+        2165606,
+        1795362135545,
+        0,
+        0,
+        0,
+        240
+      ],
+      [
+        2165607,
+        1795362140985,
+        0,
+        0,
+        0,
+        230
+      ],
+      [
+        2165608,
+        1795362154976,
+        0,
+        0,
+        0,
+        239
+      ],
+      [
+        2165609,
+        1795362165194,
+        0,
+        0,
+        0,
+        246
+      ],
+      [
+        2165610,
+        1795362174933,
+        0,
+        0,
+        0,
+        220
+      ],
+      [
+        2165611,
+        1795362185271,
+        0,
+        0,
+        0,
+        204
+      ],
+      [
+        2165612,
+        1795362192724,
+        0,
+        0,
+        0,
+        292
+      ],
+      [
+        2165613,
+        1795362196903,
+        0,
+        0,
+        0,
+        132
+      ],
+      [
+        2165614,
+        1795362201444,
+        1,
+        2,
+        2,
+        131
+      ],
+      [
+        2165615,
+        1795362215001,
+        0,
+        0,
+        0,
+        241
+      ],
+      [
+        2165616,
+        1795362219153,
+        1,
+        1,
+        1,
+        124
       ]
     ]
   },
@@ -3184,8 +3184,8 @@
     "daily": [
       {
         "day": "2026-10-23",
-        "blocks": 401,
-        "earned": 19047.5448
+        "blocks": 395,
+        "earned": 18762.5442
       },
       {
         "day": "2026-10-24",
@@ -3334,8 +3334,8 @@
       },
       {
         "day": "2026-11-22",
-        "blocks": 873,
-        "earned": 39394.2175
+        "blocks": 875,
+        "earned": 39484.4676
       }
     ],
     "retainDays": 30
@@ -4500,9 +4500,9 @@
       {
         "t": 1795359600000,
         "observed": true,
-        "chainBlocks": 252,
-        "wins": 19,
-        "sharePercent": 7.5
+        "chainBlocks": 291,
+        "wins": 21,
+        "sharePercent": 7.2
       }
     ],
     "observedHours": 164,
@@ -4528,9 +4528,9 @@
         "address": "a6567633ac83a7017f3a2ef20fbbed890a2adae9",
         "label": "Jim-pi4",
         "url": "https://explore.xyo.network/xl1/mainnet/address/a6567633ac83a7017f3a2ef20fbbed890a2adae9",
-        "blocks": 6446,
+        "blocks": 6450,
         "previousBlocks": 6098,
-        "sharePercent": 9.72,
+        "sharePercent": 9.71,
         "previousSharePercent": 8.95,
         "deltaPercent": 0.77
       },
@@ -4538,7 +4538,7 @@
         "address": "2152e6aec996742fb6e52ae1aad87bd44f2ccc91",
         "label": "LewSales-2",
         "url": "https://explore.xyo.network/xl1/mainnet/address/2152e6aec996742fb6e52ae1aad87bd44f2ccc91",
-        "blocks": 8352,
+        "blocks": 8358,
         "previousBlocks": 8205,
         "sharePercent": 12.59,
         "previousSharePercent": 12.04,
@@ -4550,9 +4550,9 @@
         "url": "https://explore.xyo.network/xl1/mainnet/address/ca08120874f071739d932b24da41cc13299123b3",
         "blocks": 8603,
         "previousBlocks": 8534,
-        "sharePercent": 12.97,
+        "sharePercent": 12.96,
         "previousSharePercent": 12.52,
-        "deltaPercent": 0.44
+        "deltaPercent": 0.43
       },
       {
         "address": "3c4ef49e493d8d1800b62fc032372d8572abd8e1",
@@ -4561,41 +4561,41 @@
         "previousBlocks": 5175,
         "sharePercent": 7.69,
         "previousSharePercent": 7.59,
-        "deltaPercent": 0.1
+        "deltaPercent": 0.09
       },
       {
         "address": "7bbf96a1eca9db6a170f7cc0851bd136830f8581",
         "url": "https://explore.xyo.network/xl1/mainnet/address/7bbf96a1eca9db6a170f7cc0851bd136830f8581",
         "blocks": 5134,
         "previousBlocks": 5508,
-        "sharePercent": 7.74,
+        "sharePercent": 7.73,
         "previousSharePercent": 8.08,
         "deltaPercent": -0.35
       },
       {
         "address": "c3d1a1c9781a41e69c0d0892ac6541f50151979f",
         "url": "https://explore.xyo.network/xl1/mainnet/address/c3d1a1c9781a41e69c0d0892ac6541f50151979f",
-        "blocks": 5641,
+        "blocks": 5651,
         "previousBlocks": 6455,
-        "sharePercent": 8.5,
+        "sharePercent": 8.51,
         "previousSharePercent": 9.47,
-        "deltaPercent": -0.97
+        "deltaPercent": -0.96
       },
       {
         "address": "fb4c535221f91c1811bd42f70b6ec305aa658551",
         "label": "FreeCryptoA",
         "url": "https://explore.xyo.network/xl1/mainnet/address/fb4c535221f91c1811bd42f70b6ec305aa658551",
-        "blocks": 5481,
+        "blocks": 5492,
         "previousBlocks": 6307,
-        "sharePercent": 8.26,
+        "sharePercent": 8.27,
         "previousSharePercent": 9.26,
-        "deltaPercent": -1
+        "deltaPercent": -0.98
       },
       {
         "address": "a9304753eade52dd22b1a6fc519b571a4dc2653e",
         "label": "LewSales-3",
         "url": "https://explore.xyo.network/xl1/mainnet/address/a9304753eade52dd22b1a6fc519b571a4dc2653e",
-        "blocks": 7999,
+        "blocks": 8007,
         "previousBlocks": 8931,
         "sharePercent": 12.06,
         "previousSharePercent": 13.11,
@@ -4614,11 +4614,11 @@
       {
         "address": "cd8f4d09564ae6a9c90f05c8bc31197c651f5f18",
         "url": "https://explore.xyo.network/xl1/mainnet/address/cd8f4d09564ae6a9c90f05c8bc31197c651f5f18",
-        "blocks": 4738,
+        "blocks": 4743,
         "previousBlocks": 6015,
         "sharePercent": 7.14,
         "previousSharePercent": 8.83,
-        "deltaPercent": -1.69
+        "deltaPercent": -1.68
       }
     ],
     "seenToday": 11,
@@ -4644,7 +4644,7 @@
     },
     "nextStep": {
       "atBlock": 3000000,
-      "blocksAway": 834429,
+      "blocksAway": 834385,
       "xl1": "42.86875",
       "basis": "protocol schedule (xl1-cli 5.6.2)",
       "status": "projection"
