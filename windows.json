@@ -1,15 +1,15 @@
 {
   "schema": 1,
   "label": "windows",
-  "generatedAt": "2026-11-25T12:59:17.188Z",
+  "generatedAt": "2026-11-25T13:04:17.195Z",
   "status": "degraded",
   "problemCount": 2,
   "chain": {
     "network": "sequence",
     "networkName": "Sequence",
     "chainId": "4b43a753c8024c0e5000e8ac948ac0063ac624bc",
-    "currentBlock": 811069,
-    "finalizedBlock": 811069,
+    "currentBlock": 811089,
+    "finalizedBlock": 811089,
     "finalizationLag": 0,
     "explorerUrl": "https://explore.xyo.network/xl1/sequence"
   },
@@ -20,23 +20,23 @@
     "producers": 8,
     "sharePercent": 18.66,
     "blocks": {
-      "total": 43623,
-      "today": 113,
-      "week": 5463,
-      "day24h": 410,
+      "total": 43627,
+      "today": 117,
+      "week": 5467,
+      "day24h": 412,
       "day24hComplete": true
     },
-    "lastBlock": 811065,
-    "lastBlockUrl": "https://explore.xyo.network/xl1/sequence/block/number/811065",
-    "blocksSinceLast": 4,
-    "rewardXl1": "2,181,260.7679",
+    "lastBlock": 811086,
+    "lastBlockUrl": "https://explore.xyo.network/xl1/sequence/block/number/811086",
+    "blocksSinceLast": 3,
+    "rewardXl1": "2,181,460.7681",
     "rewardAddressUrl": "https://explore.xyo.network/xl1/sequence/address/2152e6aec996742fb6e52ae1aad87bd44f2ccc91"
   },
   "network": {
     "observed": {
-      "blocks": 233817,
+      "blocks": 233837,
       "fromBlock": 577263,
-      "toBlock": 811069,
+      "toBlock": 811089,
       "since": "2026-08-30T19:02:45.136Z",
       "behind": 0,
       "daysStored": 35,
@@ -45,7 +45,7 @@
     },
     "concentration": {
       "producers": 8,
-      "blocks": 233817,
+      "blocks": 233837,
       "leaderShare": 19.36,
       "top3Share": 55.53,
       "nakamoto": 3,
@@ -53,7 +53,7 @@
       "evenShare": 12.5
     },
     "blockTime": {
-      "samples": 228272,
+      "samples": 228292,
       "meanSeconds": 31.35,
       "medianSeconds": 25,
       "p90Seconds": 60,
@@ -91,11 +91,11 @@
         900
       ],
       "buckets": [
-        10678,
-        56929,
-        22475,
-        12894,
-        10400,
+        10684,
+        56934,
+        22479,
+        12895,
+        10401,
         8706,
         8073,
         10895,
@@ -103,7 +103,7 @@
         7361,
         10721,
         14747,
-        41641,
+        41644,
         2629,
         1818,
         232,
@@ -129,7 +129,7 @@
       {
         "address": "ca08120874f071739d932b24da41cc13299123b3",
         "label": "LewSales-pi3",
-        "blocks": 45277,
+        "blocks": 45280,
         "sharePercent": 19.36,
         "rank": 1,
         "isSelf": false,
@@ -138,7 +138,7 @@
       {
         "address": "2152e6aec996742fb6e52ae1aad87bd44f2ccc91",
         "label": "LewSales-2",
-        "blocks": 43623,
+        "blocks": 43627,
         "sharePercent": 18.66,
         "rank": 2,
         "isSelf": true,
@@ -146,7 +146,7 @@
       },
       {
         "address": "81b835c16e6da6152b4d9ebd7e55162f762767a1",
-        "blocks": 40935,
+        "blocks": 40939,
         "sharePercent": 17.51,
         "rank": 3,
         "isSelf": false,
@@ -154,7 +154,7 @@
       },
       {
         "address": "8a499c81cb6a8106933f66a6cfdd6ea6439575e3",
-        "blocks": 40449,
+        "blocks": 40454,
         "sharePercent": 17.3,
         "rank": 4,
         "isSelf": false,
@@ -162,7 +162,7 @@
       },
       {
         "address": "7ac8355c0ed1b6404da1ce7fe87a23394bab8056",
-        "blocks": 39716,
+        "blocks": 39720,
         "sharePercent": 16.99,
         "rank": 5,
         "isSelf": false,
@@ -197,26 +197,26 @@
   },
   "race": {
     "windowSeconds": 3600,
-    "built": 76,
+    "built": 72,
     "retries": 0,
     "lost": {
       "txAlreadyFinalized": 0,
-      "behindFinalizedHead": 5,
+      "behindFinalizedHead": 4,
       "blockNumberMismatch": 0
     }
   },
   "operations": {
-    "score": 98,
+    "score": 99,
     "components": [
       {
         "label": "Latency",
         "value": 100,
-        "why": "cycle p50 187ms vs a 1000ms budget"
+        "why": "cycle p50 193ms vs a 1000ms budget"
       },
       {
         "label": "Race health",
-        "value": 93,
-        "why": "5 of 76 builds rejected locally"
+        "value": 94,
+        "why": "4 of 72 builds rejected locally"
       },
       {
         "label": "Win rate",
@@ -230,26 +230,26 @@
       }
     ],
     "bottleneck": {
-      "key": "competition",
-      "text": "Head advanced first on 100% of rejections — we are being outrun, not failing."
+      "key": "none",
+      "text": "No local performance constraint detected."
     }
   },
   "latency": {
     "headFetchMinMs": 0,
-    "headFetchP50Ms": 0,
-    "headFetchP95Ms": 154,
-    "cycleP50Ms": 187,
-    "cycleP95Ms": 397,
+    "headFetchP50Ms": 1,
+    "headFetchP95Ms": 139,
+    "cycleP50Ms": 193,
+    "cycleP95Ms": 411,
     "stages": {
-      "headFetch": 0,
-      "blockProduction": 177,
-      "mempoolTx": 126,
-      "mempoolBlocks": 132,
+      "headFetch": 1,
+      "blockProduction": 180,
+      "mempoolTx": 125,
+      "mempoolBlocks": 133,
       "submit": 136,
-      "timePayload": 78,
+      "timePayload": 77,
       "rewardTransfers": 0
     },
-    "samples": 155512
+    "samples": 156096
   },
   "clock": {
     "synced": true,
@@ -284,13 +284,13 @@
       "restartCount": 0,
       "startedAt": "2026-11-24T02:10:09.983517331Z",
       "windowSeconds": 3600,
-      "builds": 75,
+      "builds": 70,
       "retries": 0,
       "validationFailures": 1,
-      "rejected": 6,
-      "timePayloadP50Ms": 324,
+      "rejected": 5,
+      "timePayloadP50Ms": 325,
       "timePayloadP95Ms": 534,
-      "lastBuildAt": "2026-11-25T12:57:18Z",
+      "lastBuildAt": "2026-11-25T13:03:19Z",
       "heights": {
         "columns": [
           "n",
@@ -301,54 +301,6 @@
           "timePayloadMs"
         ],
         "rows": [
-          [
-            2195372,
-            1795607888961,
-            0,
-            0,
-            0,
-            428
-          ],
-          [
-            2195373,
-            1795607948900,
-            0,
-            0,
-            0,
-            351
-          ],
-          [
-            2195374,
-            1795608008961,
-            0,
-            0,
-            0,
-            370
-          ],
-          [
-            2195375,
-            1795608069401,
-            0,
-            0,
-            0,
-            354
-          ],
-          [
-            2195376,
-            1795608129953,
-            0,
-            0,
-            1,
-            439
-          ],
-          [
-            2195377,
-            1795608189600,
-            0,
-            0,
-            0,
-            324
-          ],
           [
             2195378,
             1795608249644,
@@ -780,6 +732,54 @@
             0,
             0,
             327
+          ],
+          [
+            2195432,
+            1795611499027,
+            0,
+            0,
+            0,
+            343
+          ],
+          [
+            2195433,
+            1795611559028,
+            0,
+            0,
+            0,
+            323
+          ],
+          [
+            2195434,
+            1795611618965,
+            0,
+            0,
+            0,
+            325
+          ],
+          [
+            2195435,
+            1795611679192,
+            0,
+            0,
+            0,
+            362
+          ],
+          [
+            2195436,
+            1795611739026,
+            0,
+            0,
+            0,
+            300
+          ],
+          [
+            2195437,
+            1795611799751,
+            0,
+            0,
+            0,
+            329
           ]
         ]
       }
@@ -792,13 +792,13 @@
       "restartCount": 0,
       "startedAt": "2026-11-24T14:47:23.702133736Z",
       "windowSeconds": 3600,
-      "builds": 514,
-      "retries": 25,
-      "validationFailures": 415,
-      "rejected": 3,
-      "timePayloadP50Ms": 198,
-      "timePayloadP95Ms": 279,
-      "lastBuildAt": "2026-11-25T12:57:20Z",
+      "builds": 510,
+      "retries": 28,
+      "validationFailures": 413,
+      "rejected": 5,
+      "timePayloadP50Ms": 200,
+      "timePayloadP95Ms": 278,
+      "lastBuildAt": "2026-11-25T13:03:19Z",
       "heights": {
         "columns": [
           "n",
@@ -810,164 +810,12 @@
         ],
         "rows": [
           [
-            810957,
-            1795607863874,
-            0,
-            3,
-            0,
-            null
-          ],
-          [
-            810958,
-            1795607874114,
-            0,
-            5,
-            0,
-            null
-          ],
-          [
-            810959,
-            1795607936024,
-            0,
-            6,
-            0,
-            null
-          ],
-          [
-            810960,
-            1795607996319,
-            0,
-            5,
-            0,
-            null
-          ],
-          [
-            810961,
-            1795608055687,
-            0,
-            3,
-            0,
-            null
-          ],
-          [
-            810962,
-            1795608064709,
-            1,
-            1,
-            0,
-            null
-          ],
-          [
-            810963,
-            1795608068679,
-            1,
-            1,
-            0,
-            null
-          ],
-          [
-            810964,
-            1795608071699,
-            0,
-            2,
-            0,
-            null
-          ],
-          [
-            810965,
-            1795608076206,
-            1,
-            2,
-            0,
-            null
-          ],
-          [
-            810966,
-            1795608080683,
-            0,
-            2,
-            0,
-            null
-          ],
-          [
-            810967,
-            1795608089720,
-            0,
-            2,
-            0,
-            null
-          ],
-          [
-            810968,
-            1795608101948,
-            1,
-            3,
-            0,
-            null
-          ],
-          [
-            810969,
-            1795608107738,
-            0,
-            2,
-            0,
-            null
-          ],
-          [
-            810970,
-            1795608116284,
-            0,
-            1,
-            0,
-            null
-          ],
-          [
-            810971,
-            1795608121523,
-            1,
-            1,
-            0,
-            null
-          ],
-          [
-            810972,
-            1795608124279,
-            1,
-            1,
-            0,
-            null
-          ],
-          [
-            810973,
-            1795608129263,
-            0,
-            2,
-            0,
-            null
-          ],
-          [
-            810974,
-            1795608146741,
-            0,
-            2,
-            0,
-            null
-          ],
-          [
-            810975,
-            1795608196810,
-            1,
-            1,
-            0,
-            null
-          ],
-          [
             810976,
-            1795608200819,
+            1795608257533,
             0,
-            2,
             0,
-            null
+            0,
+            253
           ],
           [
             810977,
@@ -1693,7 +1541,183 @@
             811067,
             1795611434582,
             0,
+            6,
+            0,
+            null
+          ],
+          [
+            811068,
+            1795611495196,
+            1,
+            1,
+            0,
+            null
+          ],
+          [
+            811069,
+            1795611498960,
+            1,
+            1,
+            0,
+            null
+          ],
+          [
+            811070,
+            1795611501676,
+            0,
+            7,
+            0,
+            null
+          ],
+          [
+            811071,
+            1795611563759,
+            0,
             4,
+            0,
+            null
+          ],
+          [
+            811072,
+            1795611623361,
+            0,
+            1,
+            1,
+            null
+          ],
+          [
+            811073,
+            1795611631875,
+            1,
+            1,
+            0,
+            null
+          ],
+          [
+            811074,
+            1795611634109,
+            0,
+            2,
+            0,
+            null
+          ],
+          [
+            811075,
+            1795611642846,
+            0,
+            2,
+            0,
+            null
+          ],
+          [
+            811076,
+            1795611654704,
+            0,
+            3,
+            0,
+            null
+          ],
+          [
+            811077,
+            1795611668437,
+            1,
+            1,
+            0,
+            null
+          ],
+          [
+            811078,
+            1795611672349,
+            1,
+            2,
+            0,
+            null
+          ],
+          [
+            811079,
+            1795611677347,
+            0,
+            3,
+            0,
+            null
+          ],
+          [
+            811080,
+            1795611699393,
+            1,
+            3,
+            1,
+            null
+          ],
+          [
+            811081,
+            1795611705006,
+            1,
+            1,
+            0,
+            null
+          ],
+          [
+            811082,
+            1795611708880,
+            1,
+            1,
+            0,
+            null
+          ],
+          [
+            811083,
+            1795611712632,
+            0,
+            1,
+            0,
+            null
+          ],
+          [
+            811084,
+            1795611726873,
+            0,
+            0,
+            0,
+            null
+          ],
+          [
+            811085,
+            1795611730954,
+            1,
+            2,
+            0,
+            null
+          ],
+          [
+            811086,
+            1795611735366,
+            0,
+            2,
+            0,
+            null
+          ],
+          [
+            811087,
+            1795611754933,
+            1,
+            1,
+            0,
+            null
+          ],
+          [
+            811088,
+            1795611758969,
+            0,
+            2,
+            0,
+            null
+          ],
+          [
+            811089,
+            1795611769934,
+            0,
+            2,
             0,
             null
           ]
@@ -1708,13 +1732,13 @@
       "restartCount": 0,
       "startedAt": "2026-11-24T14:47:21.530553575Z",
       "windowSeconds": 3600,
-      "builds": 511,
-      "retries": 29,
-      "validationFailures": 422,
-      "rejected": 7,
-      "timePayloadP50Ms": 193,
-      "timePayloadP95Ms": 271,
-      "lastBuildAt": "2026-11-25T12:57:20Z",
+      "builds": 514,
+      "retries": 27,
+      "validationFailures": 423,
+      "rejected": 5,
+      "timePayloadP50Ms": 196,
+      "timePayloadP95Ms": 270,
+      "lastBuildAt": "2026-11-25T13:03:21Z",
       "heights": {
         "columns": [
           "n",
@@ -1726,164 +1750,12 @@
         ],
         "rows": [
           [
-            810957,
-            1795607863802,
-            0,
-            3,
-            0,
-            null
-          ],
-          [
-            810958,
-            1795607874505,
-            0,
-            6,
-            1,
-            null
-          ],
-          [
-            810959,
-            1795607936557,
-            0,
-            6,
-            0,
-            null
-          ],
-          [
-            810960,
-            1795607995630,
-            1,
-            5,
-            0,
-            null
-          ],
-          [
-            810961,
-            1795608055685,
-            0,
-            2,
-            0,
-            null
-          ],
-          [
-            810962,
-            1795608063697,
-            1,
-            2,
-            0,
-            null
-          ],
-          [
-            810963,
-            1795608068673,
-            1,
-            2,
-            0,
-            null
-          ],
-          [
-            810964,
-            1795608071426,
-            0,
-            2,
-            0,
-            null
-          ],
-          [
-            810965,
-            1795608076165,
-            3,
-            3,
-            2,
-            null
-          ],
-          [
-            810966,
-            1795608083742,
-            1,
-            3,
-            0,
-            null
-          ],
-          [
-            810967,
-            1795608090209,
-            1,
-            4,
-            0,
-            null
-          ],
-          [
-            810968,
-            1795608102224,
-            0,
-            2,
-            0,
-            null
-          ],
-          [
-            810969,
-            1795608109226,
-            0,
-            2,
-            0,
-            null
-          ],
-          [
-            810970,
-            1795608116813,
-            0,
-            0,
-            0,
-            null
-          ],
-          [
-            810971,
-            1795608121024,
-            1,
-            1,
-            0,
-            null
-          ],
-          [
-            810972,
-            1795608125738,
-            0,
-            1,
-            0,
-            null
-          ],
-          [
-            810973,
-            1795608130187,
-            0,
-            2,
-            0,
-            null
-          ],
-          [
-            810974,
-            1795608145279,
-            0,
-            2,
-            0,
-            null
-          ],
-          [
-            810975,
-            1795608196818,
-            1,
-            1,
-            0,
-            null
-          ],
-          [
             810976,
-            1795608200805,
+            1795608257526,
             0,
-            2,
             0,
-            null
+            0,
+            175
           ],
           [
             810977,
@@ -2609,7 +2481,183 @@
             811067,
             1795611434592,
             0,
+            6,
+            0,
+            null
+          ],
+          [
+            811068,
+            1795611494693,
+            1,
             3,
+            0,
+            null
+          ],
+          [
+            811069,
+            1795611498949,
+            1,
+            1,
+            0,
+            null
+          ],
+          [
+            811070,
+            1795611502755,
+            0,
+            6,
+            0,
+            null
+          ],
+          [
+            811071,
+            1795611562686,
+            0,
+            5,
+            0,
+            null
+          ],
+          [
+            811072,
+            1795611622761,
+            0,
+            3,
+            0,
+            null
+          ],
+          [
+            811073,
+            1795611629744,
+            0,
+            1,
+            0,
+            null
+          ],
+          [
+            811074,
+            1795611634076,
+            0,
+            3,
+            0,
+            null
+          ],
+          [
+            811075,
+            1795611642273,
+            0,
+            3,
+            0,
+            null
+          ],
+          [
+            811076,
+            1795611654146,
+            0,
+            3,
+            0,
+            null
+          ],
+          [
+            811077,
+            1795611667798,
+            0,
+            1,
+            0,
+            null
+          ],
+          [
+            811078,
+            1795611672795,
+            1,
+            1,
+            0,
+            null
+          ],
+          [
+            811079,
+            1795611676793,
+            0,
+            3,
+            0,
+            null
+          ],
+          [
+            811080,
+            1795611699316,
+            1,
+            3,
+            1,
+            null
+          ],
+          [
+            811081,
+            1795611705007,
+            1,
+            1,
+            0,
+            null
+          ],
+          [
+            811082,
+            1795611708802,
+            0,
+            1,
+            0,
+            null
+          ],
+          [
+            811083,
+            1795611712597,
+            0,
+            1,
+            0,
+            null
+          ],
+          [
+            811084,
+            1795611726261,
+            1,
+            1,
+            0,
+            null
+          ],
+          [
+            811085,
+            1795611730850,
+            0,
+            2,
+            0,
+            null
+          ],
+          [
+            811086,
+            1795611735327,
+            0,
+            2,
+            0,
+            null
+          ],
+          [
+            811087,
+            1795611754348,
+            1,
+            1,
+            0,
+            null
+          ],
+          [
+            811088,
+            1795611757855,
+            0,
+            2,
+            0,
+            null
+          ],
+          [
+            811089,
+            1795611769351,
+            0,
+            2,
             0,
             null
           ]
@@ -2771,8 +2819,8 @@
       },
       {
         "day": "2026-11-25",
-        "blocks": 241,
-        "earned": 12050.0255
+        "blocks": 243,
+        "earned": 12150.0255
       }
     ],
     "retainDays": 30
@@ -2780,13 +2828,6 @@
   "continuity": {
     "windowHours": 168,
     "hours": [
-      {
-        "t": 1795006800000,
-        "observed": true,
-        "chainBlocks": 43,
-        "wins": 12,
-        "sharePercent": 27.9
-      },
       {
         "t": 1795010400000,
         "observed": true,
@@ -3955,10 +3996,14 @@
         "chainBlocks": 104,
         "wins": 17,
         "sharePercent": 16.3
+      },
+      {
+        "t": 1795611600000,
+        "observed": false
       }
     ],
     "observedHours": 168,
-    "unobservedHours": 0,
+    "unobservedHours": 1,
     "producingHours": 158,
     "missedHours": 10,
     "producingPercent": 94,
@@ -3971,7 +4016,7 @@
       {
         "address": "81b835c16e6da6152b4d9ebd7e55162f762767a1",
         "url": "https://explore.xyo.network/xl1/sequence/address/81b835c16e6da6152b4d9ebd7e55162f762767a1",
-        "blocks": 5804,
+        "blocks": 5808,
         "previousBlocks": 4353,
         "sharePercent": 20.55,
         "previousSharePercent": 17.67,
@@ -3980,7 +4025,7 @@
       {
         "address": "7ac8355c0ed1b6404da1ce7fe87a23394bab8056",
         "url": "https://explore.xyo.network/xl1/sequence/address/7ac8355c0ed1b6404da1ce7fe87a23394bab8056",
-        "blocks": 5808,
+        "blocks": 5812,
         "previousBlocks": 4486,
         "sharePercent": 20.56,
         "previousSharePercent": 18.21,
@@ -3989,7 +4034,7 @@
       {
         "address": "8a499c81cb6a8106933f66a6cfdd6ea6439575e3",
         "url": "https://explore.xyo.network/xl1/sequence/address/8a499c81cb6a8106933f66a6cfdd6ea6439575e3",
-        "blocks": 5686,
+        "blocks": 5691,
         "previousBlocks": 4524,
         "sharePercent": 20.13,
         "previousSharePercent": 18.36,
@@ -3999,7 +4044,7 @@
         "address": "2152e6aec996742fb6e52ae1aad87bd44f2ccc91",
         "label": "LewSales-2",
         "url": "https://explore.xyo.network/xl1/sequence/address/2152e6aec996742fb6e52ae1aad87bd44f2ccc91",
-        "blocks": 5463,
+        "blocks": 5467,
         "previousBlocks": 5604,
         "sharePercent": 19.34,
         "previousSharePercent": 22.75,
@@ -4009,7 +4054,7 @@
         "address": "ca08120874f071739d932b24da41cc13299123b3",
         "label": "LewSales-pi3",
         "url": "https://explore.xyo.network/xl1/sequence/address/ca08120874f071739d932b24da41cc13299123b3",
-        "blocks": 5485,
+        "blocks": 5488,
         "previousBlocks": 5668,
         "sharePercent": 19.42,
         "previousSharePercent": 23.01,
@@ -4034,19 +4079,19 @@
     "perBlock": {
       "xl1": "50",
       "source": "recorded",
-      "block": 811065,
+      "block": 811086,
       "ofTotalXl1": "500"
     },
     "nextStep": {
       "atBlock": 1000000,
-      "blocksAway": 188931,
+      "blocksAway": 188911,
       "xl1": "47.5",
       "basis": "protocol schedule (xl1-cli 5.6.2); Sequence history has not always followed it",
       "status": "projection"
     },
     "recorded": {
-      "xl1": "1647100",
-      "blocks": 32942,
+      "xl1": "1647300",
+      "blocks": 32946,
       "since": 669331
     },
     "inScanRecorded": {
@@ -4059,10 +4104,10 @@
       "discrepancy": "history found 10681 own blocks where the live scan counted 10683"
     },
     "fees": {
-      "xl1": "5.0068928"
+      "xl1": "5.0071344"
     },
     "earned": {
-      "xl1": "2181150",
+      "xl1": "2181350",
       "scope": "since scanning began",
       "from": 577263,
       "recordedShare": 100
@@ -4081,15 +4126,15 @@
       }
     },
     "lifetime": {
-      "blocks": 43623,
-      "liveCounterBlocks": 43625,
-      "earnedXl1": "2181150",
-      "recordedXl1": "2181150",
-      "feesXl1": "5.6935569",
+      "blocks": 43627,
+      "liveCounterBlocks": 43629,
+      "earnedXl1": "2181350",
+      "recordedXl1": "2181350",
+      "feesXl1": "5.6937985",
       "unrecordedBlocks": 0,
       "firstBlock": 580121,
       "basis": "chain records from block 1",
-      "attributedXl1": "2181150"
+      "attributedXl1": "2181350"
     },
     "evidence": {
       "blockFile": "https://blocks.sequence.xyo.space/block/number/{n}.json",
